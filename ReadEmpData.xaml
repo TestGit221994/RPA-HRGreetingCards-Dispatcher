@@ -1,13 +1,13 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="ReadEmpData" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mg="clr-namespace:Microsoft.Graph;assembly=Microsoft.Graph" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
-    <x:Property Name="out_EmpData" Type="OutArgument(sd:DataTable)" />
     <x:Property Name="in_FinalLogFilePath" Type="InArgument(x:String)" />
+    <x:Property Name="out_FilterEmpData" Type="OutArgument(sd:DataTable)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>541.6,1168.8</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1239,576</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ReadEmpData_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -52,6 +52,7 @@
       <x:String>UiPath.MicrosoftOffice365.Activities.Contracts</x:String>
       <x:String>System.Activities.Runtime.Collections</x:String>
       <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Linq.Expressions</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -119,9 +120,18 @@
       <AssemblyReference>Microsoft.Graph.Core</AssemblyReference>
       <AssemblyReference>UiPath.MicrosoftOffice365</AssemblyReference>
       <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable1</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable2</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable3</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable4</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable5</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable6</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable7</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable8</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ReadEmpData" sap:VirtualizedContainerService.HintSize="552,1104" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ReadEmpData" sap:VirtualizedContainerService.HintSize="500,511" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Default="[new DataTable]" Name="dt_EmpData" />
       <Variable x:TypeArguments="x:String" Name="dateToVerify" />
@@ -137,48 +147,7 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="DownloadEmpDetailsFileFromOneDrive" sap:VirtualizedContainerService.HintSize="489.6,546.4" sap2010:WorkflowViewState.IdRef="TryCatch_1">
-      <TryCatch.Try>
-        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="DownloadEmpDetailsFileFromOneDrive - Invoke Workflow File (DownloadEmpDetailsFileFromOneDrive.xaml)" sap:VirtualizedContainerService.HintSize="334.4,174.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="DownloadEmpDetailsFileFromOneDrive.xaml">
-          <ui:InvokeWorkflowFile.Arguments>
-            <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_ConfigData">[in_Config]</InArgument>
-            <InArgument x:TypeArguments="x:String" x:Key="in_LogFilePath">[in_FinalLogFilePath]</InArgument>
-          </ui:InvokeWorkflowFile.Arguments>
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-        </ui:InvokeWorkflowFile>
-      </TryCatch.Try>
-      <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="456,381.6" sap2010:WorkflowViewState.IdRef="Catch`1_1">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <ActivityAction x:TypeArguments="s:Exception">
-            <ActivityAction.Argument>
-              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-            </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="449.6,311.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_FinalLogFilePath]" sap:VirtualizedContainerService.HintSize="387.2,134.4" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[Now.ToString+&quot; : &quot;+ &quot;Exception : While Download EmpDetails Sheet from OneDrive to Local using Path : &quot;+Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;excelFilePath&quot;).ToString+ &quot; Exception Details are : &quot;+exception.Message]" UseDefaultEncoding="False" />
-              <Rethrow sap:VirtualizedContainerService.HintSize="387.2,24.8" sap2010:WorkflowViewState.IdRef="Rethrow_1" />
-            </Sequence>
-          </ActivityAction>
-        </Catch>
-      </TryCatch.Catches>
-    </TryCatch>
-    <TryCatch DisplayName="ReadEmpDataExcel" sap:VirtualizedContainerService.HintSize="489.6,405.6" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <TryCatch DisplayName="ReadEmpDataExcel" sap:VirtualizedContainerService.HintSize="438,400" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -186,17 +155,11 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReadEmpDataexcel - Invoke Workflow File (ReadEmpDataexcel.xaml)" sap:VirtualizedContainerService.HintSize="334.4,174.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="ReadEmpDataexcel.xaml">
+        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReadEmpDataexcel - Invoke Workflow File (ReadEmpDataexcel.xaml)" sap:VirtualizedContainerService.HintSize="334,172" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="ReadEmpDataexcel.xaml">
           <ui:InvokeWorkflowFile.Arguments>
             <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
-            <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_EmpData">[out_EmpData]</OutArgument>
-            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dt_EmpData">[dt_EmpData]</InOutArgument>
-            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dt_WishesName">[dt_WishesName]</InOutArgument>
-            <InOutArgument x:TypeArguments="x:String" x:Key="dateToVerify">[dateToVerify]</InOutArgument>
-            <InOutArgument x:TypeArguments="x:String" x:Key="systemDate">[systemDate]</InOutArgument>
-            <InOutArgument x:TypeArguments="x:String" x:Key="WishDetails">[WishDetails]</InOutArgument>
-            <InOutArgument x:TypeArguments="x:Int64" x:Key="Years">[Years]</InOutArgument>
             <InArgument x:TypeArguments="x:String" x:Key="in_LogFilePath">[in_FinalLogFilePath]</InArgument>
+            <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dt_FilterEmpDetails">[out_FilterEmpData]</OutArgument>
           </ui:InvokeWorkflowFile.Arguments>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -207,7 +170,7 @@
         </ui:InvokeWorkflowFile>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,22" sap2010:WorkflowViewState.IdRef="Catch`1_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -218,13 +181,13 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="449.6,311.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence sap:VirtualizedContainerService.HintSize="449,278" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_FinalLogFilePath]" sap:VirtualizedContainerService.HintSize="387.2,134.4" sap2010:WorkflowViewState.IdRef="AppendLine_2" Text="[Now.ToString+&quot; : &quot;+ &quot;Exception : While Process EmpDetails Sheet from OneDrive to Local using Path : &quot;+Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;excelFilePath&quot;).ToString+ &quot; Exception Details are : &quot;+exception.Message]" UseDefaultEncoding="False">
+              <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_FinalLogFilePath]" sap:VirtualizedContainerService.HintSize="387,165" sap2010:WorkflowViewState.IdRef="AppendLine_2" Text="[Now.ToString+&quot; : &quot;+ &quot;Exception : While Process EmpDetails Sheet from OneDrive to Local using Path : &quot;+Environment.CurrentDirectory+&quot;\&quot;+in_Config(&quot;excelFilePath&quot;).ToString+ &quot; Exception Details are : &quot;+exception.Message]" UseDefaultEncoding="False">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>

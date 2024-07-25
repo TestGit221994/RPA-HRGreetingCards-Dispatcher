@@ -1,0 +1,8 @@
+﻿Log File Created Successfully 07/23/2024 14:05:20
+07/23/2024 14:05:20 : HR-Dispatcher :  Process has started for Filter Empdetails and Add into Queue 
+07/23/2024 14:05:20 : HR-Dispatcher : Find EmpDetailsExcelFile at one drive location Path : HR-GreetingsCardsData/EmpDetails : Search Query : EmpDetails.xlsx
+07/23/2024 14:06:33 : HR-Dispatcher : Unable to Find EmpDetailsExcelFile at one drive location Path : HR-GreetingsCardsData/EmpDetails : Search Query : EmpDetails.xlsx Code: generalException
+Message: An error occurred sending the request.
+
+07/23/2024 14:06:33 : Exception : While Process EmpDetails Sheet from OneDrive to Local using Path : C:\Users\sakadav\Desktop\RPA-HRGreetingCardsProcess\Dispatcher-Process\HR-GreetingsCardsData/EmpDetails Exception Details are : 07/23/2024 14:06:33 : HR-Dispatcher : Unable to Find EmpDetailsExcelFile at one drive location Path : HR-GreetingsCardsData/EmpDetails : Search Query : EmpDetails.xlsx Code: generalException
+Message: An error occurred sending the request.

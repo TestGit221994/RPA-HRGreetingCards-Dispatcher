@@ -1,0 +1,965 @@
+{
+  "exportedBy": null,
+  "bundleHash": null,
+  "version": "1.0.0.0",
+  "jitAssemblyCompilerCommands": [
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 1,
+        "idRef": "ReadRangeConnections`1_1",
+        "hash": "ReadRangeConnections`1_1|DataTable|XJ9H16DKECllwEQmNJXZw8P9fguePtTLfrFvk8zfK4",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "EmpID",
+            "dataType": "System.String, System.Private.CoreLib",
+            "name": "EmpID",
+            "category": "Simplified"
+          },
+          {
+            "columnName": "EmpName",
+            "dataType": "System.String, System.Private.CoreLib",
+            "name": "EmpName",
+            "category": "Simplified"
+          },
+          {
+            "columnName": "EmpDepartment",
+            "dataType": "System.String, System.Private.CoreLib",
+            "name": "EmpDepartment",
+            "category": "Simplified"
+          },
+          {
+            "columnName": "EmpDOB",
+            "dataType": "System.String, System.Private.CoreLib",
+            "name": "EmpDOB",
+            "category": "Simplified"
+          },
+          {
+            "columnName": "EmpEmailID",
+            "dataType": "System.String, System.Private.CoreLib",
+            "name": "EmpEmailID",
+            "category": "Simplified"
+          },
+          {
+            "columnName": "DOBWishesName",
+            "dataType": "System.String, System.Private.CoreLib",
+            "name": "DOBWishesName",
+            "category": "Simplified"
+          },
+          {
+            "columnName": "DOBImageName",
+            "dataType": "System.String, System.Private.CoreLib",
+            "name": "DOBImageName",
+            "category": "Simplified"
+          }
+        ],
+        "rowExtensionProperties": [
+          {
+            "columnName": "WorksheetsRowIndex",
+            "dataType": "System.Int32, System.Private.CoreLib",
+            "descriptionKey": "General_RowExtensions_Property_WorksheetsRowIndex_Description",
+            "category": "Simplified"
+          }
+        ],
+        "nestedRowExtensionProperties": [
+          {
+            "parentColumnName": "EmpID",
+            "extension": {
+              "columnName": "_Address",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "EmpID Address",
+              "descriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "parentColumnName": "EmpID",
+            "extension": {
+              "columnName": "_ColumnAddress",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "EmpID ColumnAddress",
+              "descriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "parentColumnName": "EmpName",
+            "extension": {
+              "columnName": "_Address",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "EmpName Address",
+              "descriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "parentColumnName": "EmpName",
+            "extension": {
+              "columnName": "_ColumnAddress",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "EmpName ColumnAddress",
+              "descriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "parentColumnName": "EmpDepartment",
+            "extension": {
+              "columnName": "_Address",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "EmpDepartment Address",
+              "descriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "parentColumnName": "EmpDepartment",
+            "extension": {
+              "columnName": "_ColumnAddress",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "EmpDepartment ColumnAddress",
+              "descriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "parentColumnName": "EmpDOB",
+            "extension": {
+              "columnName": "_Address",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "EmpDOB Address",
+              "descriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "parentColumnName": "EmpDOB",
+            "extension": {
+              "columnName": "_ColumnAddress",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "EmpDOB ColumnAddress",
+              "descriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "parentColumnName": "EmpEmailID",
+            "extension": {
+              "columnName": "_Address",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "EmpEmailID Address",
+              "descriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "parentColumnName": "EmpEmailID",
+            "extension": {
+              "columnName": "_ColumnAddress",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "EmpEmailID ColumnAddress",
+              "descriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "parentColumnName": "DOBWishesName",
+            "extension": {
+              "columnName": "_Address",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "DOBWishesName Address",
+              "descriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "parentColumnName": "DOBWishesName",
+            "extension": {
+              "columnName": "_ColumnAddress",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "DOBWishesName ColumnAddress",
+              "descriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "parentColumnName": "DOBImageName",
+            "extension": {
+              "columnName": "_Address",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "DOBImageName Address",
+              "descriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "parentColumnName": "DOBImageName",
+            "extension": {
+              "columnName": "_ColumnAddress",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "DOBImageName ColumnAddress",
+              "descriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          }
+        ],
+        "resourceManager": {
+          "resourceManagerName": "UiPath.MicrosoftOffice365.Properties.Resources",
+          "resourceManagerAssemblyName": "UiPath.MicrosoftOffice365"
+        }
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable1",
+        "hash": "ReadRangeConnections`1_1|DataTable|aNveBVFoEgPLnl02PmUClhwHdqty7wpbjq0KmjMMx8|kTpLYz4sNoey8Tk2EUQH8fS98LWuj9UMSbl2aNSKE4|dpA8m66ruZrdVrm6TDByraKP8l0W6FcqcvXEux5QU",
+        "assemblyName": "Studio.Generated.TypedDataTable1"
+      }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 2,
+        "idRef": "ReadRangeConnections`1_2",
+        "hash": "ReadRangeConnections`1_2|DataTable|UATqSB3SViYGDCcEiiTX29h8NrJ4GLQAXEfhIM",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "EmpID",
+            "dataType": "System.String, System.Private.CoreLib",
+            "name": "EmpID",
+            "category": "Simplified"
+          },
+          {
+            "columnName": "EmpName",
+            "dataType": "System.String, System.Private.CoreLib",
+            "name": "EmpName",
+            "category": "Simplified"
+          },
+          {
+            "columnName": "EmpDepartment",
+            "dataType": "System.String, System.Private.CoreLib",
+            "name": "EmpDepartment",
+            "category": "Simplified"
+          },
+          {
+            "columnName": "EmpDOJ",
+            "dataType": "System.String, System.Private.CoreLib",
+            "name": "EmpDOJ",
+            "category": "Simplified"
+          },
+          {
+            "columnName": "EmpEmailID",
+            "dataType": "System.String, System.Private.CoreLib",
+            "name": "EmpEmailID",
+            "category": "Simplified"
+          },
+          {
+            "columnName": "DOJWishesName",
+            "dataType": "System.String, System.Private.CoreLib",
+            "name": "DOJWishesName",
+            "category": "Simplified"
+          },
+          {
+            "columnName": "DOJImageName",
+            "dataType": "System.String, System.Private.CoreLib",
+            "name": "DOJImageName",
+            "category": "Simplified"
+          },
+          {
+            "columnName": "DOJWishNameOnImage",
+            "dataType": "System.String, System.Private.CoreLib",
+            "name": "DOJWishNameOnImage",
+            "category": "Simplified"
+          }
+        ],
+        "rowExtensionProperties": [
+          {
+            "columnName": "WorksheetsRowIndex",
+            "dataType": "System.Int32, System.Private.CoreLib",
+            "descriptionKey": "General_RowExtensions_Property_WorksheetsRowIndex_Description",
+            "category": "Simplified"
+          }
+        ],
+        "nestedRowExtensionProperties": [
+          {
+            "parentColumnName": "EmpID",
+            "extension": {
+              "columnName": "_Address",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "EmpID Address",
+              "descriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "parentColumnName": "EmpID",
+            "extension": {
+              "columnName": "_ColumnAddress",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "EmpID ColumnAddress",
+              "descriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "parentColumnName": "EmpName",
+            "extension": {
+              "columnName": "_Address",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "EmpName Address",
+              "descriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "parentColumnName": "EmpName",
+            "extension": {
+              "columnName": "_ColumnAddress",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "EmpName ColumnAddress",
+              "descriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "parentColumnName": "EmpDepartment",
+            "extension": {
+              "columnName": "_Address",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "EmpDepartment Address",
+              "descriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "parentColumnName": "EmpDepartment",
+            "extension": {
+              "columnName": "_ColumnAddress",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "EmpDepartment ColumnAddress",
+              "descriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "parentColumnName": "EmpDOJ",
+            "extension": {
+              "columnName": "_Address",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "EmpDOJ Address",
+              "descriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "parentColumnName": "EmpDOJ",
+            "extension": {
+              "columnName": "_ColumnAddress",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "EmpDOJ ColumnAddress",
+              "descriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "parentColumnName": "EmpEmailID",
+            "extension": {
+              "columnName": "_Address",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "EmpEmailID Address",
+              "descriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "parentColumnName": "EmpEmailID",
+            "extension": {
+              "columnName": "_ColumnAddress",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "EmpEmailID ColumnAddress",
+              "descriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "parentColumnName": "DOJWishesName",
+            "extension": {
+              "columnName": "_Address",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "DOJWishesName Address",
+              "descriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "parentColumnName": "DOJWishesName",
+            "extension": {
+              "columnName": "_ColumnAddress",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "DOJWishesName ColumnAddress",
+              "descriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "parentColumnName": "DOJImageName",
+            "extension": {
+              "columnName": "_Address",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "DOJImageName Address",
+              "descriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "parentColumnName": "DOJImageName",
+            "extension": {
+              "columnName": "_ColumnAddress",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "DOJImageName ColumnAddress",
+              "descriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "parentColumnName": "DOJWishNameOnImage",
+            "extension": {
+              "columnName": "_Address",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "DOJWishNameOnImage Address",
+              "descriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "parentColumnName": "DOJWishNameOnImage",
+            "extension": {
+              "columnName": "_ColumnAddress",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "DOJWishNameOnImage ColumnAddress",
+              "descriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          }
+        ],
+        "resourceManager": {
+          "resourceManagerName": "UiPath.MicrosoftOffice365.Properties.Resources",
+          "resourceManagerAssemblyName": "UiPath.MicrosoftOffice365"
+        }
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable2",
+        "hash": "ReadRangeConnections`1_2|DataTable|MkN1gOwaSKNsDox1F19fKd1LG5I8eXeQ2o5AOEPg|kTpLYz4sNoey8Tk2EUQH8fS98LWuj9UMSbl2aNSKE4|dpA8m66ruZrdVrm6TDByraKP8l0W6FcqcvXEux5QU",
+        "assemblyName": "Studio.Generated.TypedDataTable2"
+      }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 3,
+        "idRef": "ReadRangeConnections`1_3",
+        "hash": "ReadRangeConnections`1_3|DataTable|GGtjwEAi1dLMV6oHyDqv7O0ZaqzSQ4pFINlMe66hgBY",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "EmpID",
+            "dataType": "System.String, System.Private.CoreLib",
+            "name": "EmpID",
+            "category": "Simplified"
+          },
+          {
+            "columnName": "EmpName",
+            "dataType": "System.String, System.Private.CoreLib",
+            "name": "EmpName",
+            "category": "Simplified"
+          },
+          {
+            "columnName": "EmpDepartment",
+            "dataType": "System.String, System.Private.CoreLib",
+            "name": "EmpDepartment",
+            "category": "Simplified"
+          },
+          {
+            "columnName": "EmpDOW",
+            "dataType": "System.String, System.Private.CoreLib",
+            "name": "EmpDOW",
+            "category": "Simplified"
+          },
+          {
+            "columnName": "EmpEmailID",
+            "dataType": "System.String, System.Private.CoreLib",
+            "name": "EmpEmailID",
+            "category": "Simplified"
+          },
+          {
+            "columnName": "DOWWishesName",
+            "dataType": "System.String, System.Private.CoreLib",
+            "name": "DOWWishesName",
+            "category": "Simplified"
+          },
+          {
+            "columnName": "DOWImageName",
+            "dataType": "System.String, System.Private.CoreLib",
+            "name": "DOWImageName",
+            "category": "Simplified"
+          }
+        ],
+        "rowExtensionProperties": [
+          {
+            "columnName": "WorksheetsRowIndex",
+            "dataType": "System.Int32, System.Private.CoreLib",
+            "descriptionKey": "General_RowExtensions_Property_WorksheetsRowIndex_Description",
+            "category": "Simplified"
+          }
+        ],
+        "nestedRowExtensionProperties": [
+          {
+            "parentColumnName": "EmpID",
+            "extension": {
+              "columnName": "_Address",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "EmpID Address",
+              "descriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "parentColumnName": "EmpID",
+            "extension": {
+              "columnName": "_ColumnAddress",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "EmpID ColumnAddress",
+              "descriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "parentColumnName": "EmpName",
+            "extension": {
+              "columnName": "_Address",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "EmpName Address",
+              "descriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "parentColumnName": "EmpName",
+            "extension": {
+              "columnName": "_ColumnAddress",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "EmpName ColumnAddress",
+              "descriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "parentColumnName": "EmpDepartment",
+            "extension": {
+              "columnName": "_Address",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "EmpDepartment Address",
+              "descriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "parentColumnName": "EmpDepartment",
+            "extension": {
+              "columnName": "_ColumnAddress",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "EmpDepartment ColumnAddress",
+              "descriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "parentColumnName": "EmpDOW",
+            "extension": {
+              "columnName": "_Address",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "EmpDOW Address",
+              "descriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "parentColumnName": "EmpDOW",
+            "extension": {
+              "columnName": "_ColumnAddress",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "EmpDOW ColumnAddress",
+              "descriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "parentColumnName": "EmpEmailID",
+            "extension": {
+              "columnName": "_Address",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "EmpEmailID Address",
+              "descriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "parentColumnName": "EmpEmailID",
+            "extension": {
+              "columnName": "_ColumnAddress",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "EmpEmailID ColumnAddress",
+              "descriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "parentColumnName": "DOWWishesName",
+            "extension": {
+              "columnName": "_Address",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "DOWWishesName Address",
+              "descriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "parentColumnName": "DOWWishesName",
+            "extension": {
+              "columnName": "_ColumnAddress",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "DOWWishesName ColumnAddress",
+              "descriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "parentColumnName": "DOWImageName",
+            "extension": {
+              "columnName": "_Address",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "DOWImageName Address",
+              "descriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "parentColumnName": "DOWImageName",
+            "extension": {
+              "columnName": "_ColumnAddress",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "DOWImageName ColumnAddress",
+              "descriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          }
+        ],
+        "resourceManager": {
+          "resourceManagerName": "UiPath.MicrosoftOffice365.Properties.Resources",
+          "resourceManagerAssemblyName": "UiPath.MicrosoftOffice365"
+        }
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable3",
+        "hash": "ReadRangeConnections`1_3|DataTable|7tPHlZiONc88l7DooaUHnKHcZL7vrliLe1rafKDLc|kTpLYz4sNoey8Tk2EUQH8fS98LWuj9UMSbl2aNSKE4|dpA8m66ruZrdVrm6TDByraKP8l0W6FcqcvXEux5QU",
+        "assemblyName": "Studio.Generated.TypedDataTable3"
+      }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 4,
+        "idRef": "ReadRangeConnections`1_4",
+        "hash": "ReadRangeConnections`1_4|DataTable|BcOKqfFYt0XBPAPZwNhoWyBoXZsOmja5ECT4Juu4bI",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "Name",
+            "dataType": "System.String, System.Private.CoreLib",
+            "name": "Name",
+            "category": "Simplified"
+          },
+          {
+            "columnName": "Details",
+            "dataType": "System.String, System.Private.CoreLib",
+            "name": "Details",
+            "category": "Simplified"
+          }
+        ],
+        "rowExtensionProperties": [
+          {
+            "columnName": "WorksheetsRowIndex",
+            "dataType": "System.Int32, System.Private.CoreLib",
+            "descriptionKey": "General_RowExtensions_Property_WorksheetsRowIndex_Description",
+            "category": "Simplified"
+          }
+        ],
+        "nestedRowExtensionProperties": [
+          {
+            "parentColumnName": "Name",
+            "extension": {
+              "columnName": "_Address",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "Name Address",
+              "descriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "parentColumnName": "Name",
+            "extension": {
+              "columnName": "_ColumnAddress",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "Name ColumnAddress",
+              "descriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "parentColumnName": "Details",
+            "extension": {
+              "columnName": "_Address",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "Details Address",
+              "descriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "parentColumnName": "Details",
+            "extension": {
+              "columnName": "_ColumnAddress",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "Details ColumnAddress",
+              "descriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          }
+        ],
+        "resourceManager": {
+          "resourceManagerName": "UiPath.MicrosoftOffice365.Properties.Resources",
+          "resourceManagerAssemblyName": "UiPath.MicrosoftOffice365"
+        }
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable4",
+        "hash": "ReadRangeConnections`1_4|DataTable|vP6wGqDKUkm3JNw1LbGR2Pr4answOFraU0Q4oZeiYA|kTpLYz4sNoey8Tk2EUQH8fS98LWuj9UMSbl2aNSKE4|dpA8m66ruZrdVrm6TDByraKP8l0W6FcqcvXEux5QU",
+        "assemblyName": "Studio.Generated.TypedDataTable4"
+      }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 5,
+        "idRef": "ReadRangeConnections`1_5",
+        "hash": "ReadRangeConnections`1_5|DataTable|BcOKqfFYt0XBPAPZwNhoWyBoXZsOmja5ECT4Juu4bI",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "Name",
+            "dataType": "System.String, System.Private.CoreLib",
+            "name": "Name",
+            "category": "Simplified"
+          },
+          {
+            "columnName": "Details",
+            "dataType": "System.String, System.Private.CoreLib",
+            "name": "Details",
+            "category": "Simplified"
+          }
+        ],
+        "rowExtensionProperties": [
+          {
+            "columnName": "WorksheetsRowIndex",
+            "dataType": "System.Int32, System.Private.CoreLib",
+            "descriptionKey": "General_RowExtensions_Property_WorksheetsRowIndex_Description",
+            "category": "Simplified"
+          }
+        ],
+        "nestedRowExtensionProperties": [
+          {
+            "parentColumnName": "Name",
+            "extension": {
+              "columnName": "_Address",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "Name Address",
+              "descriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "parentColumnName": "Name",
+            "extension": {
+              "columnName": "_ColumnAddress",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "Name ColumnAddress",
+              "descriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "parentColumnName": "Details",
+            "extension": {
+              "columnName": "_Address",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "Details Address",
+              "descriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "parentColumnName": "Details",
+            "extension": {
+              "columnName": "_ColumnAddress",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "Details ColumnAddress",
+              "descriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          }
+        ],
+        "resourceManager": {
+          "resourceManagerName": "UiPath.MicrosoftOffice365.Properties.Resources",
+          "resourceManagerAssemblyName": "UiPath.MicrosoftOffice365"
+        }
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable5",
+        "hash": "ReadRangeConnections`1_5|DataTable|vP6wGqDKUkm3JNw1LbGR2Pr4answOFraU0Q4oZeiYA|kTpLYz4sNoey8Tk2EUQH8fS98LWuj9UMSbl2aNSKE4|dpA8m66ruZrdVrm6TDByraKP8l0W6FcqcvXEux5QU",
+        "assemblyName": "Studio.Generated.TypedDataTable5"
+      }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 6,
+        "idRef": "ReadRangeConnections`1_6",
+        "hash": "ReadRangeConnections`1_6|DataTable|BcOKqfFYt0XBPAPZwNhoWyBoXZsOmja5ECT4Juu4bI",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "Name",
+            "dataType": "System.String, System.Private.CoreLib",
+            "name": "Name",
+            "category": "Simplified"
+          },
+          {
+            "columnName": "Details",
+            "dataType": "System.String, System.Private.CoreLib",
+            "name": "Details",
+            "category": "Simplified"
+          }
+        ],
+        "rowExtensionProperties": [
+          {
+            "columnName": "WorksheetsRowIndex",
+            "dataType": "System.Int32, System.Private.CoreLib",
+            "descriptionKey": "General_RowExtensions_Property_WorksheetsRowIndex_Description",
+            "category": "Simplified"
+          }
+        ],
+        "nestedRowExtensionProperties": [
+          {
+            "parentColumnName": "Name",
+            "extension": {
+              "columnName": "_Address",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "Name Address",
+              "descriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "parentColumnName": "Name",
+            "extension": {
+              "columnName": "_ColumnAddress",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "Name ColumnAddress",
+              "descriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "parentColumnName": "Details",
+            "extension": {
+              "columnName": "_Address",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "Details Address",
+              "descriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "parentColumnName": "Details",
+            "extension": {
+              "columnName": "_ColumnAddress",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "Details ColumnAddress",
+              "descriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          }
+        ],
+        "resourceManager": {
+          "resourceManagerName": "UiPath.MicrosoftOffice365.Properties.Resources",
+          "resourceManagerAssemblyName": "UiPath.MicrosoftOffice365"
+        }
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable6",
+        "hash": "ReadRangeConnections`1_6|DataTable|vP6wGqDKUkm3JNw1LbGR2Pr4answOFraU0Q4oZeiYA|kTpLYz4sNoey8Tk2EUQH8fS98LWuj9UMSbl2aNSKE4|dpA8m66ruZrdVrm6TDByraKP8l0W6FcqcvXEux5QU",
+        "assemblyName": "Studio.Generated.TypedDataTable6"
+      }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 7,
+        "idRef": "ReadRangeConnections`1_7",
+        "hash": "ReadRangeConnections`1_7|DataTable|T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [],
+        "rowExtensionProperties": [
+          {
+            "columnName": "WorksheetsRowIndex",
+            "dataType": "System.Int32, System.Private.CoreLib",
+            "descriptionKey": "General_RowExtensions_Property_WorksheetsRowIndex_Description",
+            "category": "Simplified"
+          }
+        ],
+        "nestedRowExtensionProperties": [],
+        "resourceManager": {
+          "resourceManagerName": "UiPath.MicrosoftOffice365.Properties.Resources",
+          "resourceManagerAssemblyName": "UiPath.MicrosoftOffice365"
+        }
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable7",
+        "hash": "ReadRangeConnections`1_7|DataTable|T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU|kTpLYz4sNoey8Tk2EUQH8fS98LWuj9UMSbl2aNSKE4|dpA8m66ruZrdVrm6TDByraKP8l0W6FcqcvXEux5QU",
+        "assemblyName": "Studio.Generated.TypedDataTable7"
+      }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 8,
+        "idRef": "ReadRangeConnections`1_7",
+        "hash": "ReadRangeConnections`1_7|DataTable|BcOKqfFYt0XBPAPZwNhoWyBoXZsOmja5ECT4Juu4bI",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "Name",
+            "dataType": "System.String, System.Private.CoreLib",
+            "name": "Name",
+            "category": "Simplified"
+          },
+          {
+            "columnName": "Details",
+            "dataType": "System.String, System.Private.CoreLib",
+            "name": "Details",
+            "category": "Simplified"
+          }
+        ],
+        "rowExtensionProperties": [
+          {
+            "columnName": "WorksheetsRowIndex",
+            "dataType": "System.Int32, System.Private.CoreLib",
+            "descriptionKey": "General_RowExtensions_Property_WorksheetsRowIndex_Description",
+            "category": "Simplified"
+          }
+        ],
+        "nestedRowExtensionProperties": [
+          {
+            "parentColumnName": "Name",
+            "extension": {
+              "columnName": "_Address",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "Name Address",
+              "descriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "parentColumnName": "Name",
+            "extension": {
+              "columnName": "_ColumnAddress",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "Name ColumnAddress",
+              "descriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          },
+          {
+            "parentColumnName": "Details",
+            "extension": {
+              "columnName": "_Address",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "Details Address",
+              "descriptionKey": "General_RowExtensions_Property_Column_Address_Description"
+            }
+          },
+          {
+            "parentColumnName": "Details",
+            "extension": {
+              "columnName": "_ColumnAddress",
+              "dataType": "System.String, System.Private.CoreLib",
+              "name": "Details ColumnAddress",
+              "descriptionKey": "General_RowExtensions_Property_Column_ColumnAddress_Description"
+            }
+          }
+        ],
+        "resourceManager": {
+          "resourceManagerName": "UiPath.MicrosoftOffice365.Properties.Resources",
+          "resourceManagerAssemblyName": "UiPath.MicrosoftOffice365"
+        }
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable8",
+        "hash": "ReadRangeConnections`1_7|DataTable|vP6wGqDKUkm3JNw1LbGR2Pr4answOFraU0Q4oZeiYA|kTpLYz4sNoey8Tk2EUQH8fS98LWuj9UMSbl2aNSKE4|dpA8m66ruZrdVrm6TDByraKP8l0W6FcqcvXEux5QU",
+        "assemblyName": "Studio.Generated.TypedDataTable8"
+      }
+    }
+  ]
+}
