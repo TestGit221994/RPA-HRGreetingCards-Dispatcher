@@ -1,0 +1,106 @@
+﻿Log File Created Successfully 07/26/2024 16:32:14
+07/26/2024 16:32:14 : HR-Dispatcher :  Process has started for Filter Empdetails and Add into Queue 
+07/26/2024 16:32:15 : HR-Dispatcher : Find EmpDetailsExcelFile at one drive location Path : HR-GreetingsCardsData/EmpDetails : Search Query : EmpDetails.xlsx
+07/26/2024 16:32:26 : HR-Dispatcher : Found EmpDetailsExcelFile at one drive location Path : HR-GreetingsCardsData/EmpDetails : Search Query : EmpDetails.xlsx
+07/26/2024 16:32:26 : HR-Dispatcher : Lets build FilterEmpDetails DT with columns Name : EmpID, EmpName, EmpDepartment, EmpTemplateName, EmpYearsOfExperience, EmpEmailID, EmpWishesName, EmpImageName. 
+07/26/2024 16:32:26 : HR-Dispatcher : FilterEmpDetails DT has been build with columns Name : EmpID, EmpName, EmpDepartment, EmpTemplateName, EmpYearsOfExperience, EmpEmailID, EmpWishesName, EmpImageName. 
+07/26/2024 16:32:26 : HR-Dispatcher : Read sheetNames from Config File :  DOB,DOJ,DOW
+07/26/2024 16:32:26 : HR-Dispatcher :  SheetNames List has been configured 
+07/26/2024 16:32:26 : HR-Dispatcher : Pass SheetName : DOB
+07/26/2024 16:32:26 : HR-Dispatcher :  Condition Matched :  DOB DOB
+07/26/2024 16:32:26 : HR-Dispatcher :  Read SheetName : DOB
+07/26/2024 16:32:27 : HR-Dispatcher : Emp Details has been read from SheetName DOB
+07/26/2024 16:32:27 : HR-Dispatcher :  FilterEmpdetails Before Count : 5
+07/26/2024 16:32:27 : HR-Dispatcher :  FilterEmpdetails After Count : 5
+07/26/2024 16:32:27 : HR-Dispatcher : Not found any exception while read Sheet : DOB
+07/26/2024 16:32:27 : HR-Dispatcher :  Before SheetName condition : DOB DOB
+07/26/2024 16:32:27 : HR-Dispatcher DOB :  After SheetName condition : DOB DOB
+07/26/2024 16:32:27 : HR-Dispatcher DOB :   Business Exception should be emptyTrue
+07/26/2024 16:32:27 : HR-Dispatcher DOB :   DateToVerify 07/19/2024 00:00:00 : SystemDate : 07/26/2024 16:32:27
+07/26/2024 16:32:27 : HR-Dispatcher : Pass SheetName : DOJ
+07/26/2024 16:32:27 : HR-Dispatcher :  Condition Matched :  DOB DOJ
+07/26/2024 16:32:27 : HR-Dispatcher :  Read SheetName : DOJ
+07/26/2024 16:32:27 : HR-Dispatcher : Emp Details has been read from SheetName DOJ
+07/26/2024 16:32:27 : HR-Dispatcher :  FilterEmpdetails Before Count : 5
+07/26/2024 16:32:27 : HR-Dispatcher :  FilterEmpdetails After Count : 5
+07/26/2024 16:32:27 : HR-Dispatcher : Not found any exception while read Sheet : DOJ
+07/26/2024 16:32:27 : HR-Dispatcher :  Before SheetName condition : DOJ DOB
+07/26/2024 16:32:27 DOJ : HR-Dispatcher :  After SheetName condition : DOJ DOJ
+07/26/2024 16:32:27 : HR-Dispatcher DOJ:   Business Exception should be emptyTrue
+07/26/2024 16:32:27 : HR-Dispatcher DOJ:   DateToVerify 07/07/2018 00:00:00 : SystemDate : 07/26/2024 16:32:27
+07/26/2024 16:32:27 : HR-Dispatcher DOJ : SystemDate :  26/Jul
+07/26/2024 16:32:27 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 07/Jul SystemDate : 26/Jul
+07/26/2024 16:32:27 : HR-Dispatcher DOJ : Dates are not matched :  DateToVerify : 07/Jul System date : 26/Jul
+07/26/2024 16:32:27 : HR-Dispatcher DOJ:   Business Exception should be emptyTrue
+07/26/2024 16:32:27 : HR-Dispatcher DOJ:   DateToVerify 07/08/2017 00:00:00 : SystemDate : 07/26/2024 16:32:27
+07/26/2024 16:32:27 : HR-Dispatcher DOJ : SystemDate :  26/Jul
+07/26/2024 16:32:27 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 08/Jul SystemDate : 26/Jul
+07/26/2024 16:32:27 : HR-Dispatcher DOJ : Dates are not matched :  DateToVerify : 08/Jul System date : 26/Jul
+07/26/2024 16:32:27 : HR-Dispatcher DOJ:   Business Exception should be emptyTrue
+07/26/2024 16:32:27 : HR-Dispatcher DOJ:   DateToVerify 07/26/2024 00:00:00 : SystemDate : 07/26/2024 16:32:27
+07/26/2024 16:32:27 : HR-Dispatcher DOJ : SystemDate :  26/Jul
+07/26/2024 16:32:27 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 26/Jul SystemDate : 26/Jul
+07/26/2024 16:32:27 : HR-Dispatcher DOJ : Dates are matched :  DateToVerify : 26/Jul System date : 26/Jul
+07/26/2024 16:32:27 : HR-Dispatcher DOJ : Read WishNameDetails from sheet :  DOJ_WishesName
+07/26/2024 16:32:27 : HR-Dispatcher DOJ: Find Lookup Value :   Lookup ColumnName :  DOJ  : Lookup TargetColumnName : DOJ_WishesName
+07/26/2024 16:32:27 : HR-Dispatcher DOJ:  Add DataRow into FilterEmpDetails DT , dataRow details  :  103 Sonu IT-RPA DOJ 0 testsk212@outlook.com Finding a co-worker like you is a matter of pride, and you continue to inspire us every day since you joined the tribe. Happy Work Anniversary, Mate!
+07/26/2024 16:32:27 : HR-Dispatcher DOJ:   Business Exception should be emptyTrue
+07/26/2024 16:32:27 : HR-Dispatcher DOJ:   DateToVerify 07/18/2024 00:00:00 : SystemDate : 07/26/2024 16:32:27
+07/26/2024 16:32:27 : HR-Dispatcher DOJ : SystemDate :  26/Jul
+07/26/2024 16:32:27 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 18/Jul SystemDate : 26/Jul
+07/26/2024 16:32:27 : HR-Dispatcher DOJ : Dates are not matched :  DateToVerify : 18/Jul System date : 26/Jul
+07/26/2024 16:32:27 : HR-Dispatcher DOJ:   Business Exception should be emptyTrue
+07/26/2024 16:32:27 : HR-Dispatcher DOJ:   DateToVerify 07/21/2028 00:00:00 : SystemDate : 07/26/2024 16:32:27
+07/26/2024 16:32:27 : HR-Dispatcher DOJ : SystemDate :  26/Jul
+07/26/2024 16:32:27 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 21/Jul SystemDate : 26/Jul
+07/26/2024 16:32:27 : HR-Dispatcher DOJ : Dates are not matched :  DateToVerify : 21/Jul System date : 26/Jul
+07/26/2024 16:32:27 : HR-Dispatcher DOJ :  Dt_EmpDetails should be empty : True
+07/26/2024 16:32:27 : HR-Dispatcher DOJ : Dt_WishName should be empty : True
+07/26/2024 16:32:27 : HR-Dispatcher : Pass SheetName : DOW
+07/26/2024 16:32:27 : HR-Dispatcher :  Condition Matched :  DOB DOW
+07/26/2024 16:32:27 : HR-Dispatcher :  Read SheetName : DOW
+07/26/2024 16:32:27 : HR-Dispatcher : Emp Details has been read from SheetName DOW
+07/26/2024 16:32:27 : HR-Dispatcher :  FilterEmpdetails Before Count : 5
+07/26/2024 16:32:27 : HR-Dispatcher :  FilterEmpdetails After Count : 5
+07/26/2024 16:32:27 : HR-Dispatcher : Not found any exception while read Sheet : DOW
+07/26/2024 16:32:27 : HR-Dispatcher :  Before SheetName condition : DOW DOB
+07/26/2024 16:32:27 : HR-Dispatcher DOW :  After SheetName condition : DOW DOW
+07/26/2024 16:32:27 : HR-Dispatcher DOW:   Business Exception should be emptyTrue
+07/26/2024 16:32:27 : HR-Dispatcher DOW :   DateToVerify 07/07/2021 00:00:00 : SystemDate : 07/26/2024 16:32:27
+07/26/2024 16:32:27 : HR-Dispatcher DOW : SystemDate :  26/Jul
+07/26/2024 16:32:27 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 07/Jul SystemDate : 26/Jul
+07/26/2024 16:32:27 : HR-Dispatcher DOW : Dates are not matched :  DateToVerify : 07/Jul System date : 26/Jul
+07/26/2024 16:32:27 : HR-Dispatcher DOW:   Business Exception should be emptyTrue
+07/26/2024 16:32:27 : HR-Dispatcher DOW :   DateToVerify 07/10/2017 00:00:00 : SystemDate : 07/26/2024 16:32:27
+07/26/2024 16:32:27 : HR-Dispatcher DOW : SystemDate :  26/Jul
+07/26/2024 16:32:27 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 10/Jul SystemDate : 26/Jul
+07/26/2024 16:32:27 : HR-Dispatcher DOW : Dates are not matched :  DateToVerify : 10/Jul System date : 26/Jul
+07/26/2024 16:32:27 : HR-Dispatcher DOW:   Business Exception should be emptyTrue
+07/26/2024 16:32:27 : HR-Dispatcher DOW :   DateToVerify 07/26/2024 00:00:00 : SystemDate : 07/26/2024 16:32:27
+07/26/2024 16:32:27 : HR-Dispatcher DOW : SystemDate :  26/Jul
+07/26/2024 16:32:27 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 26/Jul SystemDate : 26/Jul
+07/26/2024 16:32:27 : HR-Dispatcher DOJ : Dates are matched :  DateToVerify : 26/Jul System date : 26/Jul
+07/26/2024 16:32:27 : HR-Dispatcher DOJ : Read WishNameDetails from sheet :  DOJ_WishesName
+07/26/2024 16:32:27 : HR-Dispatcher DOW:  DOW  : Lookup TargetColumnName : DOW_WishesName
+07/26/2024 16:32:27 : HR-Dispatcher DOW :  Add DataRow into FilterEmpDetails DT , dataRow details  :  113 Nikita IT-Tech DOW NA testsk212@outlook.com The best thing to hold onto in life is each other
+07/26/2024 16:32:27 : HR-Dispatcher DOW:   Business Exception should be emptyTrue
+07/26/2024 16:32:27 : HR-Dispatcher DOW :   DateToVerify 07/19/2018 00:00:00 : SystemDate : 07/26/2024 16:32:27
+07/26/2024 16:32:27 : HR-Dispatcher DOW : SystemDate :  26/Jul
+07/26/2024 16:32:27 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 19/Jul SystemDate : 26/Jul
+07/26/2024 16:32:27 : HR-Dispatcher DOW : Dates are not matched :  DateToVerify : 19/Jul System date : 26/Jul
+07/26/2024 16:32:27 : HR-Dispatcher DOW:   Business Exception should be emptyTrue
+07/26/2024 16:32:27 : HR-Dispatcher DOW :   DateToVerify 07/16/2024 00:00:00 : SystemDate : 07/26/2024 16:32:27
+07/26/2024 16:32:27 : HR-Dispatcher DOW : SystemDate :  26/Jul
+07/26/2024 16:32:27 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 16/Jul SystemDate : 26/Jul
+07/26/2024 16:32:27 : HR-Dispatcher DOW : Dates are not matched :  DateToVerify : 16/Jul System date : 26/Jul
+07/26/2024 16:32:27 : HR-Dispatcher :  Dt_EmpDetails should be empty : True
+07/26/2024 16:32:27 : HR-Dispatcher : Dt_WishName should be empty : True
+07/26/2024 16:32:27 : HR-Dispatcher : FilterEmpDetail added into sheet, SheetName is : EmpDataFilterEmpDetails DT Count is : 2
+07/26/2024 16:32:28 : HR-Dispatcher :  Before Pass FilterEmpDetails DT Count is : 2
+07/26/2024 16:32:28 : HR-Dispatcher :  After Pass out_FilterEmpDetails DT Count is : 2
+07/26/2024 16:32:28 : HR-Dispatcher :  Filter Empdetails has been completed now moving to Add empDetail into Queue 
+07/26/2024 16:32:28 : HR-Dispatcher :  Get Queue/Transaction details from queue with unique reference : 103 - DOJ
+07/26/2024 16:32:30 : HR-Dispatcher :  Transaction is already available into queue, Transaction details are :   FilterEmpDetails DT Data  : 103 Sonu IT-RPA DOJ 0 Finding a co-worker like you is a matter of pride, and you continue to inspire us every day since you joined the tribe. Happy Work Anniversary, Mate! testsk212@outlook.com 103
+07/26/2024 16:32:30 : HR-Dispatcher :  Get Queue/Transaction details from queue with unique reference : 113 - DOW
+07/26/2024 16:32:31 : HR-Dispatcher :  Transaction is already available into queue, Transaction details are :   FilterEmpDetails DT Data  : 113 Nikita IT-Tech DOW NA The best thing to hold onto in life is each other testsk212@outlook.com NA
+07/26/2024 16:32:31 : HR-Dispatcher :  Process has Ended for Filter Empdetails and Add into Queue 
