@@ -9,7 +9,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1114.4,1234.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1239,1264</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>CreateLog_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -102,7 +102,7 @@
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="CreateLog" sap:VirtualizedContainerService.HintSize="572.8,1169.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="CreateLog" sap:VirtualizedContainerService.HintSize="592,1199" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="isFolderExits" />
     </Sequence.Variables>
@@ -111,10 +111,10 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists" Exists="[isFolderExits]" sap:VirtualizedContainerService.HintSize="510.4,116" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[Environment.CurrentDirectory+&quot;\&quot;+in_LogFolderPath]" PathType="Folder" />
-    <If Condition="[isFolderExits]" sap:VirtualizedContainerService.HintSize="510.4,901.6" sap2010:WorkflowViewState.IdRef="If_1">
+    <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists" Exists="[isFolderExits]" sap:VirtualizedContainerService.HintSize="530,147" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[Environment.CurrentDirectory+&quot;\&quot;+in_LogFolderPath]" PathType="Folder" />
+    <If Condition="[isFolderExits]" sap:VirtualizedContainerService.HintSize="530,964" sap2010:WorkflowViewState.IdRef="If_1">
       <If.Then>
-        <Sequence sap:VirtualizedContainerService.HintSize="476.8,718.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,700" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="strTime" />
           </Sequence.Variables>
@@ -123,7 +123,7 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="433.6,24.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
             <ui:MultipleAssign.AssignOperations>
               <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                 <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -167,7 +167,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:MultipleAssign>
-          <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+          <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_1">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">[in_LogFileName]</OutArgument>
             </Assign.To>
@@ -175,8 +175,8 @@
               <InArgument x:TypeArguments="x:String">[in_LogFileName.ToString+".txt"]</InArgument>
             </Assign.Value>
           </Assign>
-          <ui:CreateFile ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create File" sap:VirtualizedContainerService.HintSize="433.6,134.4" sap2010:WorkflowViewState.IdRef="CreateFile_1" Name="[in_LogFileName]" Path="[in_LogFolderPath]" />
-          <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+          <ui:CreateFile ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create File" sap:VirtualizedContainerService.HintSize="434,165" sap2010:WorkflowViewState.IdRef="CreateFile_1" Name="[in_LogFileName]" Path="[in_LogFolderPath]" />
+          <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_2">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">[out_FinalLogFilePath]</OutArgument>
             </Assign.To>
@@ -184,7 +184,7 @@
               <InArgument x:TypeArguments="x:String">[Path.Combine(in_LogFolderPath+in_LogFileName)]</InArgument>
             </Assign.Value>
           </Assign>
-          <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[out_FinalLogFilePath.ToString]" sap:VirtualizedContainerService.HintSize="433.6,24.8" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[in_str_DefaultText]" UseDefaultEncoding="False">
+          <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[out_FinalLogFilePath.ToString]" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[in_str_DefaultText]" UseDefaultEncoding="False">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -192,7 +192,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:AppendLine>
-          <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_3">
+          <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_3">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Boolean">[out_IsProcessSuccessful]</OutArgument>
             </Assign.To>
@@ -203,7 +203,13 @@
         </Sequence>
       </If.Then>
       <If.Else>
-        <Sequence sap2010:WorkflowViewState.IdRef="Sequence_3" />
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,103" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
       </If.Else>
     </If>
   </Sequence>
