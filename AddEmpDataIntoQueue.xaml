@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1239,1260</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>933,1146</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>AddEmpDataIntoQueue_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -123,13 +123,13 @@
       <AssemblyReference>Studio.Generated.TypedDataTable8</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="AddEmpDataIntoQueue" sap:VirtualizedContainerService.HintSize="708,1195" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="AddEmpDataIntoQueue" sap:VirtualizedContainerService.HintSize="708,1081" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="AddEmpDataIntoQueue" sap:VirtualizedContainerService.HintSize="646,1107" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="AddEmpDataIntoQueue" sap:VirtualizedContainerService.HintSize="646,993" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -137,13 +137,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="AddEmpDataIntoQueue" sap:VirtualizedContainerService.HintSize="608,856" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="AddEmpDataIntoQueue" sap:VirtualizedContainerService.HintSize="608,742" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <If Condition="[in_EmpFilterData.Rows.Count &gt; 0]" sap:VirtualizedContainerService.HintSize="546,768" sap2010:WorkflowViewState.IdRef="If_2">
+          <If Condition="[in_EmpFilterData.Rows.Count &gt; 0]" sap:VirtualizedContainerService.HintSize="546,654" sap2010:WorkflowViewState.IdRef="If_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -151,20 +151,20 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <If.Then>
-              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="512,582" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="512,468" sap2010:WorkflowViewState.IdRef="Sequence_8">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[in_EmpFilterData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="450,494" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[in_EmpFilterData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="450,380" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                   <ui:ForEachRow.Body>
                     <ActivityAction x:TypeArguments="sd:DataRow">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,307" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,193" sap2010:WorkflowViewState.IdRef="Sequence_3">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="scg:IEnumerable(ui:QueueItem)" Name="isQueueItemExits" />
                         </Sequence.Variables>
@@ -181,7 +181,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:AppendLine>
-                        <TryCatch DisplayName="GetEmpDetilsFromQueue" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                        <TryCatch DisplayName="AddEmpDetailsEntryIntoQueue" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="TryCatch_3">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -189,200 +189,44 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <TryCatch.Try>
-                            <ui:GetQueueItems Duration="{x:Null}" From="{x:Null}" Priority="{x:Null}" Skip="{x:Null}" TimeoutMS="{x:Null}" To="{x:Null}" Top="{x:Null}" DisplayName="Get Queue Items" FilterStrategy="Equals" FolderPath="Demo_Projects" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="GetQueueItems_1" QueueItemStates="New" QueueName="EmpData" Reference="[CurrentRow(&quot;EmpID&quot;).ToString+&quot; - &quot;+CurrentRow(&quot;EmpTemplateName&quot;).ToString]" Result="[isQueueItemExits]">
+                            <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add Queue Item" FolderPath="Demo_Projects" sap:VirtualizedContainerService.HintSize="334,194" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" Priority="Normal" QueueType="EmpData" Reference="[CurrentRow(&quot;EmpID&quot;).ToString+&quot; - &quot;+CurrentRow(&quot;EmpTemplateName&quot;).ToString]">
+                              <ui:AddQueueItem.ItemInformation>
+                                <InArgument x:TypeArguments="x:String" x:Key="EmpID">[CurrentRow("EmpID").ToString]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="EmpName">[CurrentRow("EmpName").ToString]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="EmpDepartment">[CurrentRow("EmpDepartment").ToString]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="EmpTemplateName">[CurrentRow("EmpTemplateName").ToString]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="EmpYearsOfExperience">[CurrentRow("EmpYearsOfExperience").ToString]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="EmpEmailID">[CurrentRow("EmpEmailID").ToString]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="EmpWishesName">[CurrentRow("EmpWishesName").ToString]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="EmpImageName">[CurrentRow("EmpImageName").ToString]</InArgument>
+                              </ui:AddQueueItem.ItemInformation>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                            </ui:GetQueueItems>
+                            </ui:AddQueueItem>
                           </TryCatch.Try>
                           <TryCatch.Catches>
-                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="422,105" sap2010:WorkflowViewState.IdRef="Catch`1_2">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                              <ActivityAction x:TypeArguments="s:Exception">
-                                <ActivityAction.Argument>
-                                  <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-                                </ActivityAction.Argument>
-                                <Sequence sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_10">
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                  <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="AppendLine_8" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Dispatcher&quot;+&quot; : &quot;+&quot; Exception while Get Queue/Transaction details from queue with unique reference : &quot;+CurrentRow(&quot;EmpID&quot;).ToString+&quot; - &quot;+CurrentRow(&quot;EmpTemplateName&quot;).ToString]" UseDefaultEncoding="False">
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                  </ui:AppendLine>
-                                  <Throw Exception="[new SystemException(Now.ToString+&quot; : &quot;+&quot;HR-Dispatcher&quot;+&quot; : &quot;+&quot; Exception while Get Queue/Transaction details from queue with unique reference : &quot;+CurrentRow(&quot;EmpID&quot;).ToString+&quot; - &quot;+CurrentRow(&quot;EmpTemplateName&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="Throw_3">
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                  </Throw>
-                                </Sequence>
-                              </ActivityAction>
-                            </Catch>
-                          </TryCatch.Catches>
-                        </TryCatch>
-                        <If Condition="[Convert.ToInt32(isQueueItemExits.Count.ToString) &gt; 0]" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="If_1">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <If.Then>
-                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,22" sap2010:WorkflowViewState.IdRef="Catch`1_3">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="AppendLine_5" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Dispatcher&quot;+&quot; : &quot;+&quot; Transaction is already available into queue, Transaction details are :  &quot; +&quot; FilterEmpDetails DT Data  : &quot;+CurrentRow(&quot;EmpID&quot;).ToString+&quot; &quot;+CurrentRow(&quot;EmpName&quot;).ToString+&quot; &quot;+CurrentRow(&quot;EmpDepartment&quot;).ToString+&quot; &quot;+CurrentRow(&quot;EmpTemplateName&quot;).ToString+&quot; &quot;+CurrentRow(&quot;EmpYearsOfExperience&quot;).ToString+&quot; &quot;+CurrentRow(&quot;EmpWishesName&quot;).ToString+&quot; &quot;+CurrentRow(&quot;EmpEmailID&quot;).ToString+&quot; &quot;+CurrentRow(&quot;EmpImageName&quot;).ToString]" UseDefaultEncoding="False">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                              </ui:AppendLine>
-                            </Sequence>
-                          </If.Then>
-                          <If.Else>
-                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,193" sap2010:WorkflowViewState.IdRef="Sequence_7">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                              <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="AppendLine_9" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Dispatcher&quot;+&quot; : &quot;+&quot; FilterEmpDetails DT Data  : &quot;+CurrentRow(&quot;EmpID&quot;).ToString+&quot; &quot;+CurrentRow(&quot;EmpName&quot;).ToString+&quot; &quot;+CurrentRow(&quot;EmpDepartment&quot;).ToString+&quot; &quot;+CurrentRow(&quot;EmpTemplateName&quot;).ToString+&quot; &quot;+CurrentRow(&quot;EmpYearsOfExperience&quot;).ToString+&quot; &quot;+CurrentRow(&quot;EmpWishesName&quot;).ToString+&quot; &quot;+CurrentRow(&quot;EmpEmailID&quot;).ToString+&quot; &quot;+CurrentRow(&quot;EmpImageName&quot;).ToString]" UseDefaultEncoding="False">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                              </ui:AppendLine>
-                              <TryCatch DisplayName="AddEmpDetailsEntryIntoQueue" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="TryCatch_3">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <TryCatch.Try>
-                                  <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add Queue Item" FolderPath="Demo_Projects" sap:VirtualizedContainerService.HintSize="334,194" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" Priority="Normal" QueueType="EmpData" Reference="[CurrentRow(&quot;EmpID&quot;).ToString+&quot; - &quot;+CurrentRow(&quot;EmpTemplateName&quot;).ToString]">
-                                    <ui:AddQueueItem.ItemInformation>
-                                      <InArgument x:TypeArguments="x:String" x:Key="EmpID">[CurrentRow("EmpID").ToString]</InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="EmpName">[CurrentRow("EmpName").ToString]</InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="EmpDepartment">[CurrentRow("EmpDepartment").ToString]</InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="EmpTemplateName">[CurrentRow("EmpTemplateName").ToString]</InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="EmpYearsOfExperience">[CurrentRow("EmpYearsOfExperience").ToString]</InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="EmpEmailID">[CurrentRow("EmpEmailID").ToString]</InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="EmpWishesName">[CurrentRow("EmpWishesName").ToString]</InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="EmpImageName">[CurrentRow("EmpImageName").ToString]</InArgument>
-                                    </ui:AddQueueItem.ItemInformation>
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                  </ui:AddQueueItem>
-                                </TryCatch.Try>
-                                <TryCatch.Catches>
-                                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,22" sap2010:WorkflowViewState.IdRef="Catch`1_3">
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                    <ActivityAction x:TypeArguments="s:Exception">
-                                      <ActivityAction.Argument>
-                                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-                                      </ActivityAction.Argument>
-                                      <Sequence sap:VirtualizedContainerService.HintSize="416,208" sap2010:WorkflowViewState.IdRef="Sequence_11">
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                        <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="AppendLine_10" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Dispatcher&quot;+&quot; : &quot;+&quot; Exception while add Queue/Transaction details from queue with &quot;+&quot; FilterEmpDetails DT Data  : &quot;+CurrentRow(&quot;EmpID&quot;).ToString+&quot; &quot;+CurrentRow(&quot;EmpName&quot;).ToString+&quot; &quot;+CurrentRow(&quot;EmpDepartment&quot;).ToString+&quot; &quot;+CurrentRow(&quot;EmpTemplateName&quot;).ToString+&quot; &quot;+CurrentRow(&quot;EmpYearsOfExperience&quot;).ToString+&quot; &quot;+CurrentRow(&quot;EmpWishesName&quot;).ToString+&quot; &quot;+CurrentRow(&quot;EmpEmailID&quot;).ToString+&quot; &quot;+CurrentRow(&quot;EmpImageName&quot;).ToString]" UseDefaultEncoding="False">
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                        </ui:AppendLine>
-                                        <Throw Exception="[new SystemException(Now.ToString+&quot; : &quot;+&quot;HR-Dispatcher&quot;+&quot; : &quot;+&quot; Exception while Get Queue/Transaction details from queue with unique reference : &quot;+CurrentRow(&quot;EmpID&quot;).ToString+&quot; - &quot;+CurrentRow(&quot;EmpTemplateName&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="Throw_4">
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                        </Throw>
-                                      </Sequence>
-                                    </ActivityAction>
-                                  </Catch>
-                                </TryCatch.Catches>
-                              </TryCatch>
-                            </Sequence>
-                          </If.Else>
-                        </If>
-                        <TryCatch DisplayName="isQueueItemExits should be Empty " sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="TryCatch_4">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <TryCatch.Try>
-                            <Assign DisplayName="isQueueItemExits should be Empty " sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
-                              <Assign.To>
-                                <OutArgument x:TypeArguments="scg:IEnumerable(ui:QueueItem)">[isQueueItemExits]</OutArgument>
-                              </Assign.To>
-                              <Assign.Value>
-                                <InArgument x:TypeArguments="scg:IEnumerable(ui:QueueItem)">[Nothing]</InArgument>
-                              </Assign.Value>
-                            </Assign>
-                          </TryCatch.Try>
-                          <TryCatch.Catches>
-                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="422,263" sap2010:WorkflowViewState.IdRef="Catch`1_4">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
                               <ActivityAction x:TypeArguments="s:Exception">
                                 <ActivityAction.Argument>
                                   <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                 </ActivityAction.Argument>
-                                <Sequence sap:VirtualizedContainerService.HintSize="416,193" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                <Sequence sap:VirtualizedContainerService.HintSize="416,208" sap2010:WorkflowViewState.IdRef="Sequence_11">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="AppendLine_11" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Dispatcher&quot;+&quot; : &quot;+&quot; Exception while isQueueAvilable making emty &quot;+exception.Message]" UseDefaultEncoding="False">
+                                  <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[in_LogFilePath]" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="AppendLine_10" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Dispatcher&quot;+&quot; : &quot;+&quot; Exception while add Queue/Transaction details from queue with &quot;+&quot; FilterEmpDetails DT Data  : &quot;+CurrentRow(&quot;EmpID&quot;).ToString+&quot; &quot;+CurrentRow(&quot;EmpName&quot;).ToString+&quot; &quot;+CurrentRow(&quot;EmpDepartment&quot;).ToString+&quot; &quot;+CurrentRow(&quot;EmpTemplateName&quot;).ToString+&quot; &quot;+CurrentRow(&quot;EmpYearsOfExperience&quot;).ToString+&quot; &quot;+CurrentRow(&quot;EmpWishesName&quot;).ToString+&quot; &quot;+CurrentRow(&quot;EmpEmailID&quot;).ToString+&quot; &quot;+CurrentRow(&quot;EmpImageName&quot;).ToString]" UseDefaultEncoding="False">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -390,7 +234,7 @@
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                   </ui:AppendLine>
-                                  <Throw Exception="[new SystemException(Now.ToString+&quot; : &quot;+&quot;HR-Dispatcher&quot;+&quot; : &quot;+&quot; Exception while isQueueAvilable making emty &quot;+exception.Message)]" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="Throw_5">
+                                  <Throw Exception="[new SystemException(Now.ToString+&quot; : &quot;+&quot;HR-Dispatcher&quot;+&quot; : &quot;+&quot; Exception while Get Queue/Transaction details from queue with unique reference : &quot;+CurrentRow(&quot;EmpID&quot;).ToString+&quot; - &quot;+CurrentRow(&quot;EmpTemplateName&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="Throw_4">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>

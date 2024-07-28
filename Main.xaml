@@ -269,8 +269,8 @@
                                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SendSMTPMailMessageOnSuccess - Invoke Workflow File (SendSMTPMailMessageOnSuccess.xaml)" sap:VirtualizedContainerService.HintSize="334,172" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_30" UnSafe="False" WorkflowFileName="SendSMTPMailMessageOnSuccess.xaml">
                                   <ui:InvokeWorkflowFile.Arguments>
                                     <InArgument x:TypeArguments="x:String" x:Key="in_SupportMailID">[Config("SupportEmailID").ToString]</InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="in_SupportSubjectLine">[Config("SupportEmailSubject").ToString]</InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="in_ErrorMessageDetails">SUCCESS</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="in_SupportSubjectLine">[Config("SupportEmailSubjectOnSuccess").ToString]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="in_ErrorMessageDetails" xml:space="preserve">SUCCESS | HR - GreetingCards : Dispatcher Process | EmpDetails has been Process Successfully. Please Check EmpDetails Excel File for more details. </InArgument>
                                     <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[Config]</InArgument>
                                     <InArgument x:TypeArguments="x:String" x:Key="in_LogFilePath">[FinalLogFilePath]</InArgument>
                                   </ui:InvokeWorkflowFile.Arguments>
@@ -331,8 +331,8 @@
                                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SendSMTPMailMessageOnFailure - Invoke Workflow File (SendSMTPMailMessageOnFailure.xaml)" sap:VirtualizedContainerService.HintSize="334,172" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_27" UnSafe="False" WorkflowFileName="SendSMTPMailMessageOnFailure.xaml">
                                   <ui:InvokeWorkflowFile.Arguments>
                                     <InArgument x:TypeArguments="x:String" x:Key="in_SupportMailID">[Config("SupportEmailID").ToString]</InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="in_SupportSubjectLine">[Config("SupportEmailSubject").ToString]</InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="in_ErrorMessageDetails">[SystemException.Message]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="in_SupportSubjectLine">[Config("SupportEmailSubjectOnError").ToString]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="in_ErrorMessageDetails">["Failed | HR - GreetingCards : Dispatcher Process | Found Some Error while Process EmpDetails, Exception Details are : " + SystemException.Message]</InArgument>
                                     <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[Config]</InArgument>
                                     <InArgument x:TypeArguments="x:String" x:Key="in_LogFilePath">[FinalLogFilePath]</InArgument>
                                   </ui:InvokeWorkflowFile.Arguments>

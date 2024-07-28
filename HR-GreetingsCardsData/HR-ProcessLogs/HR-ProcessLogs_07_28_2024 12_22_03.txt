@@ -1,0 +1,202 @@
+﻿Log File Created Successfully 07/28/2024 12:22:03
+07/28/2024 12:22:03 : HR-Dispatcher :  Process has started for Filter Empdetails and Add into Queue 
+07/28/2024 12:22:04 : HR-Dispatcher : Find EmpDetailsExcelFile at one drive location Path : HR-GreetingsCardsData\EmpDetails : Search Query : EmpDetails.xlsx
+07/28/2024 12:22:08 : HR-Dispatcher : Found EmpDetailsExcelFile at one drive location Path : HR-GreetingsCardsData\EmpDetails : Search Query : EmpDetails.xlsx
+07/28/2024 12:22:08 : HR-Dispatcher : Lets build FilterEmpDetails DT with columns Name : EmpID, EmpName, EmpDepartment, EmpTemplateName, EmpYearsOfExperience, EmpEmailID, EmpWishesName, EmpImageName. 
+07/28/2024 12:22:08 : HR-Dispatcher : FilterEmpDetails DT has been build with columns Name : EmpID, EmpName, EmpDepartment, EmpTemplateName, EmpYearsOfExperience, EmpEmailID, EmpWishesName, EmpImageName. 
+07/28/2024 12:22:08 : HR-Dispatcher : Read sheetNames from Config File :  DOB,DOJ,DOW
+07/28/2024 12:22:08 : HR-Dispatcher :  SheetNames List has been configured 
+07/28/2024 12:22:08 : HR-Dispatcher : Pass SheetName : DOB
+07/28/2024 12:22:08 : HR-Dispatcher :  Condition Matched :  DOB DOB
+07/28/2024 12:22:08 : HR-Dispatcher :  Read SheetName : DOB
+07/28/2024 12:22:08 : HR-Dispatcher : Emp Details has been read from SheetName DOB
+07/28/2024 12:22:08 : HR-Dispatcher :  FilterEmpdetails Before Count : 5
+07/28/2024 12:22:08 : HR-Dispatcher :  FilterEmpdetails After Count : 5
+07/28/2024 12:22:08 : HR-Dispatcher : Not found any exception while read Sheet : DOB
+07/28/2024 12:22:08 : HR-Dispatcher :  Before SheetName condition : DOB DOB
+07/28/2024 12:22:08 : HR-Dispatcher DOB :  After SheetName condition : DOB DOB
+07/28/2024 12:22:08 : HR-Dispatcher DOB :  EmpID is :  101
+07/28/2024 12:22:08 : HR-Dispatcher DOB :  EmpName is :  Suraj
+07/28/2024 12:22:08 : HR-Dispatcher DOB :  EmpDepartment is :  IT-RPA
+07/28/2024 12:22:08 : HR-Dispatcher DOB :  EmpDOB is :  07/03/1995 00:00:00
+07/28/2024 12:22:08 : HR-Dispatcher DOB :  EmpEmailID is :  testsk212@outlook.com
+07/28/2024 12:22:08 : HR-Dispatcher DOB :   Business Exception should be emptyTrue
+07/28/2024 12:22:08 : HR-Dispatcher DOB :   DateToVerify 07/03/1995 00:00:00 : SystemDate : 07/28/2024 12:22:08
+07/28/2024 12:22:08 : HR-Dispatcher DOB : SystemDate :  28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOB : Before condition checked : DateToVerify : 03/Jul SystemDate : 28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOB : Dates are not matched :  DateToVerify : 03/Jul System date : 28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOB :  EmpID is :  102
+07/28/2024 12:22:08 : HR-Dispatcher DOB :  EmpName is :  Vikas
+07/28/2024 12:22:08 : HR-Dispatcher DOB :  EmpDepartment is :  IT-RPA
+07/28/2024 12:22:08 : HR-Dispatcher DOB :  EmpDOB is :  07/05/1986 00:00:00
+07/28/2024 12:22:08 : HR-Dispatcher DOB :  EmpEmailID is :  testsk212@outlook.com
+07/28/2024 12:22:08 : HR-Dispatcher DOB :   Business Exception should be emptyTrue
+07/28/2024 12:22:08 : HR-Dispatcher DOB :   DateToVerify 07/05/1986 00:00:00 : SystemDate : 07/28/2024 12:22:08
+07/28/2024 12:22:08 : HR-Dispatcher DOB : SystemDate :  28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOB : Before condition checked : DateToVerify : 05/Jul SystemDate : 28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOB : Dates are not matched :  DateToVerify : 05/Jul System date : 28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOB :  EmpID is :  103
+07/28/2024 12:22:08 : HR-Dispatcher DOB :  EmpName is :  Sonu
+07/28/2024 12:22:08 : HR-Dispatcher DOB :  EmpDepartment is :  IT-RPA
+07/28/2024 12:22:08 : HR-Dispatcher DOB :  EmpDOB is :  07/28/2024 00:00:00
+07/28/2024 12:22:08 : HR-Dispatcher DOB :  EmpEmailID is :  testsk212@outlook.com
+07/28/2024 12:22:08 : HR-Dispatcher DOB :   Business Exception should be emptyTrue
+07/28/2024 12:22:08 : HR-Dispatcher DOB :   DateToVerify 07/28/2024 00:00:00 : SystemDate : 07/28/2024 12:22:08
+07/28/2024 12:22:08 : HR-Dispatcher DOB : SystemDate :  28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOB : Before condition checked : DateToVerify : 28/Jul SystemDate : 28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOB : Dates are matched :  DateToVerify : 28/Jul System date : 28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOB : Read WishNameDetails from sheet :  DOB_WishesName
+07/28/2024 12:22:08 : HR-Dispatcher DOB :   WishName Details :5
+07/28/2024 12:22:08 : HR-Dispatcher DOB :   Find Lookup Value :   Lookup ColumnName : DOB_WishesNameDT_WishName Count is : 5
+07/28/2024 12:22:08 : HR-Dispatcher DOB :   Add DataRow into FilterEmpDetails DT , dataRow details  :  103 Sonu IT-RPA DOB NA testsk212@outlook.com Happy birthday! I hope all your birthday wishes and dreams come true.
+07/28/2024 12:22:08 : HR-Dispatcher DOB :  EmpID is :  104
+07/28/2024 12:22:08 : HR-Dispatcher DOB :  EmpName is :  Abhi
+07/28/2024 12:22:08 : HR-Dispatcher DOB :  EmpDepartment is :  IT-RPA
+07/28/2024 12:22:08 : HR-Dispatcher DOB :  EmpDOB is :  07/07/1989 00:00:00
+07/28/2024 12:22:08 : HR-Dispatcher DOB :  EmpEmailID is :  testsk212@outlook.com
+07/28/2024 12:22:08 : HR-Dispatcher DOB :   Business Exception should be emptyTrue
+07/28/2024 12:22:08 : HR-Dispatcher DOB :   DateToVerify 07/07/1989 00:00:00 : SystemDate : 07/28/2024 12:22:08
+07/28/2024 12:22:08 : HR-Dispatcher DOB : SystemDate :  28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOB : Before condition checked : DateToVerify : 07/Jul SystemDate : 28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOB : Dates are not matched :  DateToVerify : 07/Jul System date : 28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOB :  EmpID is :  105
+07/28/2024 12:22:08 : HR-Dispatcher DOB :  EmpName is :  Sharukha
+07/28/2024 12:22:08 : HR-Dispatcher DOB :  EmpDepartment is :  IT-RPA
+07/28/2024 12:22:08 : HR-Dispatcher DOB :  EmpDOB is :  07/08/1991 00:00:00
+07/28/2024 12:22:08 : HR-Dispatcher DOB :  EmpEmailID is :  testsk212@outlook.com
+07/28/2024 12:22:08 : HR-Dispatcher DOB :   Business Exception should be emptyTrue
+07/28/2024 12:22:08 : HR-Dispatcher DOB :   DateToVerify 07/08/1991 00:00:00 : SystemDate : 07/28/2024 12:22:08
+07/28/2024 12:22:08 : HR-Dispatcher DOB : SystemDate :  28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOB : Before condition checked : DateToVerify : 08/Jul SystemDate : 28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOB : Dates are not matched :  DateToVerify : 08/Jul System date : 28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOB :  Dt_EmpDetails should be empty : True
+07/28/2024 12:22:08 : HR-Dispatcher DOB : Dt_WishName should be empty : True
+07/28/2024 12:22:08 : HR-Dispatcher : Pass SheetName : DOJ
+07/28/2024 12:22:08 : HR-Dispatcher :  Condition Matched :  DOB DOJ
+07/28/2024 12:22:08 : HR-Dispatcher :  Read SheetName : DOJ
+07/28/2024 12:22:08 : HR-Dispatcher : Emp Details has been read from SheetName DOJ
+07/28/2024 12:22:08 : HR-Dispatcher :  FilterEmpdetails Before Count : 5
+07/28/2024 12:22:08 : HR-Dispatcher :  FilterEmpdetails After Count : 5
+07/28/2024 12:22:08 : HR-Dispatcher : Not found any exception while read Sheet : DOJ
+07/28/2024 12:22:08 : HR-Dispatcher :  Before SheetName condition : DOJ DOB
+07/28/2024 12:22:08 DOJ : HR-Dispatcher :  After SheetName condition : DOJ DOJ
+07/28/2024 12:22:08 : HR-Dispatcher DOJ :  EmpID is :  106
+07/28/2024 12:22:08 : HR-Dispatcher DOJ :  EmpName is :  Anjali
+07/28/2024 12:22:08 : HR-Dispatcher DOJ :  EmpDepartment is :  IT-Devops
+07/28/2024 12:22:08 : HR-Dispatcher DOJ :  EmpDOJ is :  07/03/1995 00:00:00
+07/28/2024 12:22:08 : HR-Dispatcher DOJ :  EmpEmailID is :  testsk212@outlook.com
+07/28/2024 12:22:08 : HR-Dispatcher DOJ:   Business Exception should be emptyTrue
+07/28/2024 12:22:08 : HR-Dispatcher DOJ:   DateToVerify 07/03/1995 00:00:00 : SystemDate : 07/28/2024 12:22:08
+07/28/2024 12:22:08 : HR-Dispatcher DOJ : SystemDate :  28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 03/Jul SystemDate : 28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOJ : Dates are not matched :  DateToVerify : 03/Jul System date : 28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOJ :  EmpID is :  107
+07/28/2024 12:22:08 : HR-Dispatcher DOJ :  EmpName is :  Ashok
+07/28/2024 12:22:08 : HR-Dispatcher DOJ :  EmpDepartment is :  IT-Devops
+07/28/2024 12:22:08 : HR-Dispatcher DOJ :  EmpDOJ is :  07/05/1986 00:00:00
+07/28/2024 12:22:08 : HR-Dispatcher DOJ :  EmpEmailID is :  testsk212@outlook.com
+07/28/2024 12:22:08 : HR-Dispatcher DOJ:   Business Exception should be emptyTrue
+07/28/2024 12:22:08 : HR-Dispatcher DOJ:   DateToVerify 07/05/1986 00:00:00 : SystemDate : 07/28/2024 12:22:08
+07/28/2024 12:22:08 : HR-Dispatcher DOJ : SystemDate :  28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 05/Jul SystemDate : 28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOJ : Dates are not matched :  DateToVerify : 05/Jul System date : 28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOJ :  EmpID is :  103
+07/28/2024 12:22:08 : HR-Dispatcher DOJ :  EmpName is :  Sonu
+07/28/2024 12:22:08 : HR-Dispatcher DOJ :  EmpDepartment is :  IT-RPA
+07/28/2024 12:22:08 : HR-Dispatcher DOJ :  EmpDOJ is :  07/05/1996 00:00:00
+07/28/2024 12:22:08 : HR-Dispatcher DOJ :  EmpEmailID is :  testsk212@outlook.com
+07/28/2024 12:22:08 : HR-Dispatcher DOJ:   Business Exception should be emptyTrue
+07/28/2024 12:22:08 : HR-Dispatcher DOJ:   DateToVerify 07/05/1996 00:00:00 : SystemDate : 07/28/2024 12:22:08
+07/28/2024 12:22:08 : HR-Dispatcher DOJ : SystemDate :  28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 05/Jul SystemDate : 28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOJ : Dates are not matched :  DateToVerify : 05/Jul System date : 28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOJ :  EmpID is :  104
+07/28/2024 12:22:08 : HR-Dispatcher DOJ :  EmpName is :  Abhi
+07/28/2024 12:22:08 : HR-Dispatcher DOJ :  EmpDepartment is :  IT-Devops
+07/28/2024 12:22:08 : HR-Dispatcher DOJ :  EmpDOJ is :  07/27/2024 00:00:00
+07/28/2024 12:22:08 : HR-Dispatcher DOJ :  EmpEmailID is :  testsk212@outlook.com
+07/28/2024 12:22:08 : HR-Dispatcher DOJ:   Business Exception should be emptyTrue
+07/28/2024 12:22:08 : HR-Dispatcher DOJ:   DateToVerify 07/27/2024 00:00:00 : SystemDate : 07/28/2024 12:22:08
+07/28/2024 12:22:08 : HR-Dispatcher DOJ : SystemDate :  28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 27/Jul SystemDate : 28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOJ : Dates are not matched :  DateToVerify : 27/Jul System date : 28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOJ :  EmpID is :  105
+07/28/2024 12:22:08 : HR-Dispatcher DOJ :  EmpName is :  Sharukha
+07/28/2024 12:22:08 : HR-Dispatcher DOJ :  EmpDepartment is :  IT-RPA
+07/28/2024 12:22:08 : HR-Dispatcher DOJ :  EmpDOJ is :  07/08/1991 00:00:00
+07/28/2024 12:22:08 : HR-Dispatcher DOJ :  EmpEmailID is :  testsk212@outlook.com
+07/28/2024 12:22:08 : HR-Dispatcher DOJ:   Business Exception should be emptyTrue
+07/28/2024 12:22:08 : HR-Dispatcher DOJ:   DateToVerify 07/08/1991 00:00:00 : SystemDate : 07/28/2024 12:22:08
+07/28/2024 12:22:08 : HR-Dispatcher DOJ : SystemDate :  28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 08/Jul SystemDate : 28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOJ : Dates are not matched :  DateToVerify : 08/Jul System date : 28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOJ :  Dt_EmpDetails should be empty : True
+07/28/2024 12:22:08 : HR-Dispatcher DOJ : Dt_WishName should be empty : True
+07/28/2024 12:22:08 : HR-Dispatcher : Pass SheetName : DOW
+07/28/2024 12:22:08 : HR-Dispatcher :  Condition Matched :  DOB DOW
+07/28/2024 12:22:08 : HR-Dispatcher :  Read SheetName : DOW
+07/28/2024 12:22:08 : HR-Dispatcher : Emp Details has been read from SheetName DOW
+07/28/2024 12:22:08 : HR-Dispatcher :  FilterEmpdetails Before Count : 5
+07/28/2024 12:22:08 : HR-Dispatcher :  FilterEmpdetails After Count : 5
+07/28/2024 12:22:08 : HR-Dispatcher : Not found any exception while read Sheet : DOW
+07/28/2024 12:22:08 : HR-Dispatcher :  Before SheetName condition : DOW DOB
+07/28/2024 12:22:08 : HR-Dispatcher DOW :  After SheetName condition : DOW DOW
+07/28/2024 12:22:08 : HR-Dispatcher DOW :  EmpID is :  111
+07/28/2024 12:22:08 : HR-Dispatcher DOW :  EmpName is :  Nikhil
+07/28/2024 12:22:08 : HR-Dispatcher DOW :  EmpDepartment is :  IT-Tech
+07/28/2024 12:22:08 : HR-Dispatcher DOW :  EmpDOW is :  07/03/1995 00:00:00
+07/28/2024 12:22:08 : HR-Dispatcher DOW :  EmpEmailID is :  testsk212@outlook.com
+07/28/2024 12:22:08 : HR-Dispatcher DOW:   Business Exception should be emptyTrue
+07/28/2024 12:22:08 : HR-Dispatcher DOW :   DateToVerify 07/03/1995 00:00:00 : SystemDate : 07/28/2024 12:22:08
+07/28/2024 12:22:08 : HR-Dispatcher DOW : SystemDate :  28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 03/Jul SystemDate : 28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOW : Dates are not matched :  DateToVerify : 03/Jul System date : 28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOW :  EmpID is :  112
+07/28/2024 12:22:08 : HR-Dispatcher DOW :  EmpName is :  Prachi
+07/28/2024 12:22:08 : HR-Dispatcher DOW :  EmpDepartment is :  IT-Tech
+07/28/2024 12:22:08 : HR-Dispatcher DOW :  EmpDOW is :  07/05/1986 00:00:00
+07/28/2024 12:22:08 : HR-Dispatcher DOW :  EmpEmailID is :  testsk212@outlook.com
+07/28/2024 12:22:08 : HR-Dispatcher DOW:   Business Exception should be emptyTrue
+07/28/2024 12:22:08 : HR-Dispatcher DOW :   DateToVerify 07/05/1986 00:00:00 : SystemDate : 07/28/2024 12:22:08
+07/28/2024 12:22:08 : HR-Dispatcher DOW : SystemDate :  28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 05/Jul SystemDate : 28/Jul
+07/28/2024 12:22:08 : HR-Dispatcher DOW : Dates are not matched :  DateToVerify : 05/Jul System date : 28/Jul
+07/28/2024 12:22:09 : HR-Dispatcher DOW :  EmpID is :  113
+07/28/2024 12:22:09 : HR-Dispatcher DOW :  EmpName is :  Nikita
+07/28/2024 12:22:09 : HR-Dispatcher DOW :  EmpDepartment is :  IT-Tech
+07/28/2024 12:22:09 : HR-Dispatcher DOW :  EmpDOW is :  07/27/2024 00:00:00
+07/28/2024 12:22:09 : HR-Dispatcher DOW :  EmpEmailID is :  testsk212@outlook.com
+07/28/2024 12:22:09 : HR-Dispatcher DOW:   Business Exception should be emptyTrue
+07/28/2024 12:22:09 : HR-Dispatcher DOW :   DateToVerify 07/27/2024 00:00:00 : SystemDate : 07/28/2024 12:22:09
+07/28/2024 12:22:09 : HR-Dispatcher DOW : SystemDate :  28/Jul
+07/28/2024 12:22:09 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 27/Jul SystemDate : 28/Jul
+07/28/2024 12:22:09 : HR-Dispatcher DOW : Dates are not matched :  DateToVerify : 27/Jul System date : 28/Jul
+07/28/2024 12:22:09 : HR-Dispatcher DOW :  EmpID is :  103
+07/28/2024 12:22:09 : HR-Dispatcher DOW :  EmpName is :  Nikhil
+07/28/2024 12:22:09 : HR-Dispatcher DOW :  EmpDepartment is :  IT-RPA
+07/28/2024 12:22:09 : HR-Dispatcher DOW :  EmpDOW is :  07/07/1989 00:00:00
+07/28/2024 12:22:09 : HR-Dispatcher DOW :  EmpEmailID is :  testsk212@outlook.com
+07/28/2024 12:22:09 : HR-Dispatcher DOW:   Business Exception should be emptyTrue
+07/28/2024 12:22:09 : HR-Dispatcher DOW :   DateToVerify 07/07/1989 00:00:00 : SystemDate : 07/28/2024 12:22:09
+07/28/2024 12:22:09 : HR-Dispatcher DOW : SystemDate :  28/Jul
+07/28/2024 12:22:09 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 07/Jul SystemDate : 28/Jul
+07/28/2024 12:22:09 : HR-Dispatcher DOW : Dates are not matched :  DateToVerify : 07/Jul System date : 28/Jul
+07/28/2024 12:22:09 : HR-Dispatcher DOW :  EmpID is :  115
+07/28/2024 12:22:09 : HR-Dispatcher DOW :  EmpName is :  Yadnya
+07/28/2024 12:22:09 : HR-Dispatcher DOW :  EmpDepartment is :  IT-Tech
+07/28/2024 12:22:09 : HR-Dispatcher DOW :  EmpDOW is :  07/08/1991 00:00:00
+07/28/2024 12:22:09 : HR-Dispatcher DOW :  EmpEmailID is :  testsk212@outlook.com
+07/28/2024 12:22:09 : HR-Dispatcher DOW:   Business Exception should be emptyTrue
+07/28/2024 12:22:09 : HR-Dispatcher DOW :   DateToVerify 07/08/1991 00:00:00 : SystemDate : 07/28/2024 12:22:09
+07/28/2024 12:22:09 : HR-Dispatcher DOW : SystemDate :  28/Jul
+07/28/2024 12:22:09 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 08/Jul SystemDate : 28/Jul
+07/28/2024 12:22:09 : HR-Dispatcher DOW : Dates are not matched :  DateToVerify : 08/Jul System date : 28/Jul
+07/28/2024 12:22:09 : HR-Dispatcher :  Dt_EmpDetails should be empty : True
+07/28/2024 12:22:09 : HR-Dispatcher : Dt_WishName should be empty : True
+07/28/2024 12:22:09 : HR-Dispatcher : FilterEmpDetail added into sheet, SheetName is : EmpDataFilterEmpDetails DT Count is : 1
+07/28/2024 12:22:09 : HR-Dispatcher :  Before Pass FilterEmpDetails DT Count is : 1
+07/28/2024 12:22:09 : HR-Dispatcher :  After Pass out_FilterEmpDetails DT Count is : 1
+07/28/2024 12:22:09 : HR-Dispatcher :  Filter Empdetails has been completed now moving to Add empDetail into Queue 
+07/28/2024 12:22:09 : HR-Dispatcher :  Get Queue/Transaction details from queue with unique reference : 103 - DOB
+07/28/2024 12:22:09 : HR-Dispatcher :  Transaction is already available into queue, Transaction details are :   FilterEmpDetails DT Data  : 103 Sonu IT-RPA DOB NA Happy birthday! I hope all your birthday wishes and dreams come true. testsk212@outlook.com NA
+07/28/2024 12:22:09 : HR-Dispatcher :  Process has Ended for Filter Empdetails and Add into Queue 
