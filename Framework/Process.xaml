@@ -2,12 +2,11 @@
   <x:Members>
     <x:Property sap2010:Annotation.AnnotationText="Dictionary structure to store configuration data of the process (settings, constants and assets)." Name="in_ConfigDate" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
     <x:Property Name="inLogFilePath" Type="InArgument(x:String)" />
-    <x:Property Name="out_dt_FilterEmpDetails" Type="OutArgument(sd:DataTable)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>933,891</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1239,1288</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessTransaction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="50">
@@ -118,14 +117,17 @@
       <AssemblyReference>Studio.Generated.TypedDataTable8</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="416,466" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="500,1223" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_FilterEmpDetails" />
+    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[inLogFilePath]" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Dispatcher&quot;+&quot; : &quot;+&quot; Process has started for Filter Empdetails and Add into Queue &quot;]" UseDefaultEncoding="False">
+    <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[inLogFilePath]" sap:VirtualizedContainerService.HintSize="438,57" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Dispatcher&quot;+&quot; : &quot;+&quot; Process has started for Filter Empdetails and Add into Queue &quot;]" UseDefaultEncoding="False">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -133,19 +135,19 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:AppendLine>
-    <TryCatch DisplayName="ReadAndProcessEmpData" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="ReadAndProcessEmpData" sap:VirtualizedContainerService.HintSize="438,432" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReadEmpData.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,172" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ReadEmpData.xaml">
+        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReadEmpData.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,172" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ReadEmpDataExcelFile.xaml">
           <ui:InvokeWorkflowFile.Arguments>
             <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_ConfigDate]</InArgument>
-            <InArgument x:TypeArguments="x:String" x:Key="in_FinalLogFilePath">[inLogFilePath]</InArgument>
-            <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_FilterEmpData">[out_dt_FilterEmpDetails]</OutArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_LogFilePath">[inLogFilePath]</InArgument>
+            <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dt_FilterEmpDetails">[dt_FilterEmpDetails]</OutArgument>
           </ui:InvokeWorkflowFile.Arguments>
         </ui:InvokeWorkflowFile>
       </TryCatch.Try>
@@ -166,7 +168,7 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[inLogFilePath]" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="AppendLine_2" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Dispatcher&quot;+&quot; : &quot;+&quot; Filter Empdetails has been completed now moving to Add empDetail into Queue &quot;]" UseDefaultEncoding="False">
+    <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[inLogFilePath]" sap:VirtualizedContainerService.HintSize="438,57" sap2010:WorkflowViewState.IdRef="AppendLine_2" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Dispatcher&quot;+&quot; : &quot;+&quot; Filter Empdetails has been completed now moving to Add empDetail into Queue &quot;]" UseDefaultEncoding="False">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -174,17 +176,17 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:AppendLine>
-    <TryCatch DisplayName="WriteDataIntoQueue" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+    <TryCatch DisplayName="WriteDataIntoQueue" sap:VirtualizedContainerService.HintSize="438,454" sap2010:WorkflowViewState.IdRef="TryCatch_5">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
         <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="AddEmpDataIntoQueue.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="343,172" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="AddEmpDataIntoQueue.xaml">
           <ui:InvokeWorkflowFile.Arguments>
-            <InArgument x:TypeArguments="sd:DataTable" x:Key="in_EmpFilterData">[out_dt_FilterEmpDetails]</InArgument>
+            <InArgument x:TypeArguments="sd:DataTable" x:Key="in_EmpFilterData">[dt_FilterEmpDetails]</InArgument>
             <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_ConfigData">[in_ConfigDate]</InArgument>
             <InArgument x:TypeArguments="x:String" x:Key="in_LogFilePath">[inLogFilePath]</InArgument>
           </ui:InvokeWorkflowFile.Arguments>
@@ -220,7 +222,7 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[inLogFilePath]" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="AppendLine_3" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Dispatcher&quot;+&quot; : &quot;+&quot; Process has Ended for Filter Empdetails and Add into Queue &quot;]" UseDefaultEncoding="False">
+    <ui:AppendLine File="{x:Null}" DisplayName="logs" FileName="[inLogFilePath]" sap:VirtualizedContainerService.HintSize="438,48" sap2010:WorkflowViewState.IdRef="AppendLine_3" Text="[Now.ToString+&quot; : &quot;+&quot;HR-Dispatcher&quot;+&quot; : &quot;+&quot; Process has Ended for Filter Empdetails and Add into Queue &quot;]" UseDefaultEncoding="False">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
