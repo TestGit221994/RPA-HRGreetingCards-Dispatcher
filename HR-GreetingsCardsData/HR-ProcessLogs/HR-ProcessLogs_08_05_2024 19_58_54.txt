@@ -1,0 +1,713 @@
+﻿Log File Path : HR-GreetingsCardsData\HR-ProcessLogs\HR-ProcessLogs_08_05_2024 19_58_54.txt
+08/05/2024 19:58:55 : HR-Dispatcher :  Process has started for Filter Empdetails and Add into Queue 
+08/05/2024 19:58:55 : HR-Dispatcher : Find EmpDetailsExcelFile at one drive location Path : HR-GreetingsCardsData\EmpDetails : Search Query : EmpDetails.xlsx
+08/05/2024 19:59:05 : HR-Dispatcher : Found EmpDetailsExcelFile at one drive location Path : HR-GreetingsCardsData\EmpDetails : Search Query : EmpDetails.xlsx
+08/05/2024 19:59:05 : HR-Dispatcher :  Lets build FilterEmpDetails DT with columns Name : EmpID, EmpName, EmpDepartment, EmpTemplateName, EmpYearsOfExperience, EmpEmailID, EmpWishesName, EmpImageName. 
+08/05/2024 19:59:05 : HR-Dispatcher :  FilterEmpDetails DT has been build with columns Name : EmpID, EmpName, EmpDepartment, EmpTemplateName, EmpYearsOfExperience, EmpEmailID, EmpWishesName, EmpImageName. 8
+08/05/2024 19:59:05 : HR-Dispatcher :  Read sheetNames from Config File :  DOB,DOJ,DOW
+08/05/2024 19:59:05 : HR-Dispatcher :  SheetNames List has been configured 
+08/05/2024 19:59:05 : HR-Dispatcher : Pass SheetName : DOB
+08/05/2024 19:59:05 : HR-Dispatcher :  Condition Matched :  DOB DOB
+08/05/2024 19:59:05 : HR-Dispatcher :  Read SheetName : DOB
+08/05/2024 19:59:05 : HR-Dispatcher : Emp Details has been read from SheetName DOB
+08/05/2024 19:59:05 : HR-Dispatcher :  FilterEmpdetails Before Count : 21
+08/05/2024 19:59:05 : HR-Dispatcher :  FilterEmpdetails After Count : 21
+08/05/2024 19:59:05 : HR-Dispatcher :  Not found any exception While read Sheet : DOB
+08/05/2024 19:59:05 : HR-Dispatcher :  Before SheetName condition : DOB DOB
+08/05/2024 19:59:05 : HR-Dispatcher DOB :  After SheetName condition : DOB DOB
+08/05/2024 19:59:06 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3604 - DOB
+08/05/2024 19:59:06 : HR-Dispatcher DOB :  EmpID is :  3604
+08/05/2024 19:59:06 : HR-Dispatcher DOB :  EmpName is :  Sakshi
+08/05/2024 19:59:06 : HR-Dispatcher DOB :  EmpDepartment is :  Digital Marketing
+08/05/2024 19:59:06 : HR-Dispatcher DOB :  EmpDOB is :  07/03/1995 00:00:00
+08/05/2024 19:59:06 : HR-Dispatcher DOB :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:06 : HR-Dispatcher DOB :   Business Exception should be emptyTrue
+08/05/2024 19:59:06 : HR-Dispatcher DOB :   DateToVerify 07/03/1995 00:00:00 : SystemDate : 08/05/2024 19:59:06
+08/05/2024 19:59:06 : HR-Dispatcher DOB : SystemDate :  05/Aug
+08/05/2024 19:59:06 : HR-Dispatcher DOB : Before condition checked : DateToVerify : 03/Jul SystemDate : 05/Aug
+08/05/2024 19:59:06 : HR-Dispatcher DOB : Dates are not matched :  DateToVerify : 03/Jul System date : 05/Aug
+08/05/2024 19:59:09 : HR-Dispatcher :  FilterEmpDetails DT Data  : 1631 - DOB
+08/05/2024 19:59:09 : HR-Dispatcher DOB :  EmpID is :  1631
+08/05/2024 19:59:09 : HR-Dispatcher DOB :  EmpName is :  Arundeep Randev
+08/05/2024 19:59:09 : HR-Dispatcher DOB :  EmpDepartment is :  Java
+08/05/2024 19:59:09 : HR-Dispatcher DOB :  EmpDOB is :  07/05/1986 00:00:00
+08/05/2024 19:59:09 : HR-Dispatcher DOB :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:09 : HR-Dispatcher DOB :   Business Exception should be emptyTrue
+08/05/2024 19:59:09 : HR-Dispatcher DOB :   DateToVerify 07/05/1986 00:00:00 : SystemDate : 08/05/2024 19:59:09
+08/05/2024 19:59:09 : HR-Dispatcher DOB : SystemDate :  05/Aug
+08/05/2024 19:59:09 : HR-Dispatcher DOB : Before condition checked : DateToVerify : 05/Jul SystemDate : 05/Aug
+08/05/2024 19:59:09 : HR-Dispatcher DOB : Dates are not matched :  DateToVerify : 05/Jul System date : 05/Aug
+08/05/2024 19:59:14 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3027 - DOB
+08/05/2024 19:59:14 : HR-Dispatcher DOB :  EmpID is :  3027
+08/05/2024 19:59:14 : HR-Dispatcher DOB :  EmpName is :  Vegisetti Srinivas 
+08/05/2024 19:59:14 : HR-Dispatcher DOB :  EmpDepartment is :  Raptors - Functional
+08/05/2024 19:59:14 : HR-Dispatcher DOB :  EmpDOB is :  07/05/1996 00:00:00
+08/05/2024 19:59:14 : HR-Dispatcher DOB :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:14 : HR-Dispatcher DOB :   Business Exception should be emptyTrue
+08/05/2024 19:59:14 : HR-Dispatcher DOB :   DateToVerify 07/05/1996 00:00:00 : SystemDate : 08/05/2024 19:59:14
+08/05/2024 19:59:14 : HR-Dispatcher DOB : SystemDate :  05/Aug
+08/05/2024 19:59:14 : HR-Dispatcher DOB : Before condition checked : DateToVerify : 05/Jul SystemDate : 05/Aug
+08/05/2024 19:59:14 : HR-Dispatcher DOB : Dates are not matched :  DateToVerify : 05/Jul System date : 05/Aug
+08/05/2024 19:59:15 : HR-Dispatcher :  FilterEmpDetails DT Data  : 2998 - DOB
+08/05/2024 19:59:15 : HR-Dispatcher DOB :  EmpID is :  2998
+08/05/2024 19:59:15 : HR-Dispatcher DOB :  EmpName is :  Ravinder Singh 
+08/05/2024 19:59:15 : HR-Dispatcher DOB :  EmpDepartment is :  Open Source
+08/05/2024 19:59:15 : HR-Dispatcher DOB :  EmpDOB is :  07/07/1989 00:00:00
+08/05/2024 19:59:15 : HR-Dispatcher DOB :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:15 : HR-Dispatcher DOB :   Business Exception should be emptyTrue
+08/05/2024 19:59:15 : HR-Dispatcher DOB :   DateToVerify 07/07/1989 00:00:00 : SystemDate : 08/05/2024 19:59:15
+08/05/2024 19:59:15 : HR-Dispatcher DOB : SystemDate :  05/Aug
+08/05/2024 19:59:15 : HR-Dispatcher DOB : Before condition checked : DateToVerify : 07/Jul SystemDate : 05/Aug
+08/05/2024 19:59:15 : HR-Dispatcher DOB : Dates are not matched :  DateToVerify : 07/Jul System date : 05/Aug
+08/05/2024 19:59:17 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3073 - DOB
+08/05/2024 19:59:17 : HR-Dispatcher DOB :  EmpID is :  3073
+08/05/2024 19:59:17 : HR-Dispatcher DOB :  EmpName is :  Meenakshi Choudhary
+08/05/2024 19:59:17 : HR-Dispatcher DOB :  EmpDepartment is :  Open Source
+08/05/2024 19:59:17 : HR-Dispatcher DOB :  EmpDOB is :  07/08/1991 00:00:00
+08/05/2024 19:59:17 : HR-Dispatcher DOB :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:17 : HR-Dispatcher DOB :   Business Exception should be emptyTrue
+08/05/2024 19:59:17 : HR-Dispatcher DOB :   DateToVerify 07/08/1991 00:00:00 : SystemDate : 08/05/2024 19:59:17
+08/05/2024 19:59:17 : HR-Dispatcher DOB : SystemDate :  05/Aug
+08/05/2024 19:59:17 : HR-Dispatcher DOB : Before condition checked : DateToVerify : 08/Jul SystemDate : 05/Aug
+08/05/2024 19:59:17 : HR-Dispatcher DOB : Dates are not matched :  DateToVerify : 08/Jul System date : 05/Aug
+08/05/2024 19:59:18 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3223 - DOB
+08/05/2024 19:59:18 : HR-Dispatcher DOB :  EmpID is :  3223
+08/05/2024 19:59:18 : HR-Dispatcher DOB :  EmpName is :  Munish Garg 
+08/05/2024 19:59:18 : HR-Dispatcher DOB :  EmpDepartment is :  Raptors - Functional
+08/05/2024 19:59:18 : HR-Dispatcher DOB :  EmpDOB is :  07/09/1989 00:00:00
+08/05/2024 19:59:18 : HR-Dispatcher DOB :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:18 : HR-Dispatcher DOB :   Business Exception should be emptyTrue
+08/05/2024 19:59:18 : HR-Dispatcher DOB :   DateToVerify 07/09/1989 00:00:00 : SystemDate : 08/05/2024 19:59:18
+08/05/2024 19:59:18 : HR-Dispatcher DOB : SystemDate :  05/Aug
+08/05/2024 19:59:18 : HR-Dispatcher DOB : Before condition checked : DateToVerify : 09/Jul SystemDate : 05/Aug
+08/05/2024 19:59:18 : HR-Dispatcher DOB : Dates are not matched :  DateToVerify : 09/Jul System date : 05/Aug
+08/05/2024 19:59:19 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3456 - DOB
+08/05/2024 19:59:19 : HR-Dispatcher DOB :  EmpID is :  3456
+08/05/2024 19:59:19 : HR-Dispatcher DOB :  EmpName is :  Md. Rahmat
+08/05/2024 19:59:19 : HR-Dispatcher DOB :  EmpDepartment is :  Open Source
+08/05/2024 19:59:19 : HR-Dispatcher DOB :  EmpDOB is :  07/10/2000 00:00:00
+08/05/2024 19:59:19 : HR-Dispatcher DOB :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:19 : HR-Dispatcher DOB :   Business Exception should be emptyTrue
+08/05/2024 19:59:19 : HR-Dispatcher DOB :   DateToVerify 07/10/2000 00:00:00 : SystemDate : 08/05/2024 19:59:19
+08/05/2024 19:59:19 : HR-Dispatcher DOB : SystemDate :  05/Aug
+08/05/2024 19:59:19 : HR-Dispatcher DOB : Before condition checked : DateToVerify : 10/Jul SystemDate : 05/Aug
+08/05/2024 19:59:19 : HR-Dispatcher DOB : Dates are not matched :  DateToVerify : 10/Jul System date : 05/Aug
+08/05/2024 19:59:20 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3308 - DOB
+08/05/2024 19:59:20 : HR-Dispatcher DOB :  EmpID is :  3308
+08/05/2024 19:59:20 : HR-Dispatcher DOB :  EmpName is :  Adesh Sharawat
+08/05/2024 19:59:20 : HR-Dispatcher DOB :  EmpDepartment is :  Raptors - Automation
+08/05/2024 19:59:20 : HR-Dispatcher DOB :  EmpDOB is :  07/12/1991 00:00:00
+08/05/2024 19:59:20 : HR-Dispatcher DOB :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:20 : HR-Dispatcher DOB :   Business Exception should be emptyTrue
+08/05/2024 19:59:20 : HR-Dispatcher DOB :   DateToVerify 07/12/1991 00:00:00 : SystemDate : 08/05/2024 19:59:20
+08/05/2024 19:59:20 : HR-Dispatcher DOB : SystemDate :  05/Aug
+08/05/2024 19:59:20 : HR-Dispatcher DOB : Before condition checked : DateToVerify : 12/Jul SystemDate : 05/Aug
+08/05/2024 19:59:20 : HR-Dispatcher DOB : Dates are not matched :  DateToVerify : 12/Jul System date : 05/Aug
+08/05/2024 19:59:23 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3449 - DOB
+08/05/2024 19:59:23 : HR-Dispatcher DOB :  EmpID is :  3449
+08/05/2024 19:59:23 : HR-Dispatcher DOB :  EmpName is :  Sourav Sharma
+08/05/2024 19:59:23 : HR-Dispatcher DOB :  EmpDepartment is :  Open Source
+08/05/2024 19:59:23 : HR-Dispatcher DOB :  EmpDOB is :  08/05/1999 00:00:00
+08/05/2024 19:59:23 : HR-Dispatcher DOB :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:23 : HR-Dispatcher DOB :   Business Exception should be emptyTrue
+08/05/2024 19:59:23 : HR-Dispatcher DOB :   DateToVerify 08/05/1999 00:00:00 : SystemDate : 08/05/2024 19:59:23
+08/05/2024 19:59:23 : HR-Dispatcher DOB : SystemDate :  05/Aug
+08/05/2024 19:59:23 : HR-Dispatcher DOB : Before condition checked : DateToVerify : 05/Aug SystemDate : 05/Aug
+08/05/2024 19:59:23 : HR-Dispatcher DOB : Dates are matched :  DateToVerify : 05/Aug System date : 05/Aug
+08/05/2024 19:59:23 : HR-Dispatcher DOB : Read WishNameDetails from sheet :  DOB_WishesName
+08/05/2024 19:59:23 : HR-Dispatcher DOB :   WishName Details :5
+08/05/2024 19:59:23 : HR-Dispatcher DOB :   Find Lookup Value :   Lookup ColumnName : DOB_WishesNameDT_WishName Count is : 5
+08/05/2024 19:59:23 : HR-Dispatcher DOB :   Add DataRow into FilterEmpDetails DT , dataRow details  :  3449 Sourav Sharma Open Source DOB NA sakadav@bugraptors.com Count your life by smiles, not tears. Count your age by friends, not years. Happy birthday!
+08/05/2024 19:59:24 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3664 - DOB
+08/05/2024 19:59:24 : HR-Dispatcher DOB :  EmpID is :  3664
+08/05/2024 19:59:24 : HR-Dispatcher DOB :  EmpName is :  Dipak Laxman Chaugule
+08/05/2024 19:59:24 : HR-Dispatcher DOB :  EmpDepartment is :  Raptors - Automation
+08/05/2024 19:59:24 : HR-Dispatcher DOB :  EmpDOB is :  07/13/1989 00:00:00
+08/05/2024 19:59:24 : HR-Dispatcher DOB :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:24 : HR-Dispatcher DOB :   Business Exception should be emptyTrue
+08/05/2024 19:59:24 : HR-Dispatcher DOB :   DateToVerify 07/13/1989 00:00:00 : SystemDate : 08/05/2024 19:59:24
+08/05/2024 19:59:24 : HR-Dispatcher DOB : SystemDate :  05/Aug
+08/05/2024 19:59:24 : HR-Dispatcher DOB : Before condition checked : DateToVerify : 13/Jul SystemDate : 05/Aug
+08/05/2024 19:59:24 : HR-Dispatcher DOB : Dates are not matched :  DateToVerify : 13/Jul System date : 05/Aug
+08/05/2024 19:59:26 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3890 - DOB
+08/05/2024 19:59:26 : HR-Dispatcher DOB :  EmpID is :  3890
+08/05/2024 19:59:26 : HR-Dispatcher DOB :  EmpName is :  Sahil Thakur
+08/05/2024 19:59:26 : HR-Dispatcher DOB :  EmpDepartment is :  Digital Marketing
+08/05/2024 19:59:26 : HR-Dispatcher DOB :  EmpDOB is :  07/13/1994 00:00:00
+08/05/2024 19:59:26 : HR-Dispatcher DOB :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:26 : HR-Dispatcher DOB :   Business Exception should be emptyTrue
+08/05/2024 19:59:26 : HR-Dispatcher DOB :   DateToVerify 07/13/1994 00:00:00 : SystemDate : 08/05/2024 19:59:26
+08/05/2024 19:59:26 : HR-Dispatcher DOB : SystemDate :  05/Aug
+08/05/2024 19:59:26 : HR-Dispatcher DOB : Before condition checked : DateToVerify : 13/Jul SystemDate : 05/Aug
+08/05/2024 19:59:26 : HR-Dispatcher DOB : Dates are not matched :  DateToVerify : 13/Jul System date : 05/Aug
+08/05/2024 19:59:27 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3059 - DOB
+08/05/2024 19:59:27 : HR-Dispatcher DOB :  EmpID is :  3059
+08/05/2024 19:59:27 : HR-Dispatcher DOB :  EmpName is :  Gurpreet Singh
+08/05/2024 19:59:27 : HR-Dispatcher DOB :  EmpDepartment is :  IT
+08/05/2024 19:59:27 : HR-Dispatcher DOB :  EmpDOB is :  07/13/1996 00:00:00
+08/05/2024 19:59:27 : HR-Dispatcher DOB :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:27 : HR-Dispatcher DOB :   Business Exception should be emptyTrue
+08/05/2024 19:59:27 : HR-Dispatcher DOB :   DateToVerify 07/13/1996 00:00:00 : SystemDate : 08/05/2024 19:59:27
+08/05/2024 19:59:27 : HR-Dispatcher DOB : SystemDate :  05/Aug
+08/05/2024 19:59:27 : HR-Dispatcher DOB : Before condition checked : DateToVerify : 13/Jul SystemDate : 05/Aug
+08/05/2024 19:59:27 : HR-Dispatcher DOB : Dates are not matched :  DateToVerify : 13/Jul System date : 05/Aug
+08/05/2024 19:59:28 : HR-Dispatcher :  FilterEmpDetails DT Data  : 1587 - DOB
+08/05/2024 19:59:28 : HR-Dispatcher DOB :  EmpID is :  1587
+08/05/2024 19:59:28 : HR-Dispatcher DOB :  EmpName is :  Amit Nanda
+08/05/2024 19:59:28 : HR-Dispatcher DOB :  EmpDepartment is :  Indus Devops
+08/05/2024 19:59:28 : HR-Dispatcher DOB :  EmpDOB is :  08/05/1982 00:00:00
+08/05/2024 19:59:28 : HR-Dispatcher DOB :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:28 : HR-Dispatcher DOB :   Business Exception should be emptyTrue
+08/05/2024 19:59:28 : HR-Dispatcher DOB :   DateToVerify 08/05/1982 00:00:00 : SystemDate : 08/05/2024 19:59:28
+08/05/2024 19:59:28 : HR-Dispatcher DOB : SystemDate :  05/Aug
+08/05/2024 19:59:28 : HR-Dispatcher DOB : Before condition checked : DateToVerify : 05/Aug SystemDate : 05/Aug
+08/05/2024 19:59:28 : HR-Dispatcher DOB : Dates are matched :  DateToVerify : 05/Aug System date : 05/Aug
+08/05/2024 19:59:28 : HR-Dispatcher DOB : Read WishNameDetails from sheet :  DOB_WishesName
+08/05/2024 19:59:28 : HR-Dispatcher DOB :   WishName Details :5
+08/05/2024 19:59:28 : HR-Dispatcher DOB :   Find Lookup Value :   Lookup ColumnName : DOB_WishesNameDT_WishName Count is : 5
+08/05/2024 19:59:28 : HR-Dispatcher DOB :   Add DataRow into FilterEmpDetails DT , dataRow details  :  1587 Amit Nanda Indus Devops DOB NA sakadav@bugraptors.com A wish for you on your birthday, whatever you ask may you receive, whatever you seek may you find, whatever you wish may it be fulfilled on your birthday and always. Happy birthday!
+08/05/2024 19:59:30 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3786 - DOB
+08/05/2024 19:59:30 : HR-Dispatcher DOB :  EmpID is :  3786
+08/05/2024 19:59:30 : HR-Dispatcher DOB :  EmpName is :  Apoorv Sharma
+08/05/2024 19:59:30 : HR-Dispatcher DOB :  EmpDepartment is :  Raptors - Automation
+08/05/2024 19:59:30 : HR-Dispatcher DOB :  EmpDOB is :  07/14/1992 00:00:00
+08/05/2024 19:59:30 : HR-Dispatcher DOB :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:30 : HR-Dispatcher DOB :   Business Exception should be emptyTrue
+08/05/2024 19:59:30 : HR-Dispatcher DOB :   DateToVerify 07/14/1992 00:00:00 : SystemDate : 08/05/2024 19:59:30
+08/05/2024 19:59:30 : HR-Dispatcher DOB : SystemDate :  05/Aug
+08/05/2024 19:59:30 : HR-Dispatcher DOB : Before condition checked : DateToVerify : 14/Jul SystemDate : 05/Aug
+08/05/2024 19:59:30 : HR-Dispatcher DOB : Dates are not matched :  DateToVerify : 14/Jul System date : 05/Aug
+08/05/2024 19:59:31 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3441 - DOB
+08/05/2024 19:59:31 : HR-Dispatcher DOB :  EmpID is :  3441
+08/05/2024 19:59:31 : HR-Dispatcher DOB :  EmpName is :  Shivanshu Singh
+08/05/2024 19:59:31 : HR-Dispatcher DOB :  EmpDepartment is :  Open Source
+08/05/2024 19:59:31 : HR-Dispatcher DOB :  EmpDOB is :  07/15/2000 00:00:00
+08/05/2024 19:59:31 : HR-Dispatcher DOB :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:31 : HR-Dispatcher DOB :   Business Exception should be emptyTrue
+08/05/2024 19:59:31 : HR-Dispatcher DOB :   DateToVerify 07/15/2000 00:00:00 : SystemDate : 08/05/2024 19:59:31
+08/05/2024 19:59:31 : HR-Dispatcher DOB : SystemDate :  05/Aug
+08/05/2024 19:59:31 : HR-Dispatcher DOB : Before condition checked : DateToVerify : 15/Jul SystemDate : 05/Aug
+08/05/2024 19:59:31 : HR-Dispatcher DOB : Dates are not matched :  DateToVerify : 15/Jul System date : 05/Aug
+08/05/2024 19:59:32 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3545 - DOB
+08/05/2024 19:59:32 : HR-Dispatcher DOB :  EmpID is :  3545
+08/05/2024 19:59:32 : HR-Dispatcher DOB :  EmpName is :  Heena
+08/05/2024 19:59:32 : HR-Dispatcher DOB :  EmpDepartment is :  Java
+08/05/2024 19:59:32 : HR-Dispatcher DOB :  EmpDOB is :  07/16/2000 00:00:00
+08/05/2024 19:59:32 : HR-Dispatcher DOB :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:32 : HR-Dispatcher DOB :   Business Exception should be emptyTrue
+08/05/2024 19:59:32 : HR-Dispatcher DOB :   DateToVerify 07/16/2000 00:00:00 : SystemDate : 08/05/2024 19:59:32
+08/05/2024 19:59:32 : HR-Dispatcher DOB : SystemDate :  05/Aug
+08/05/2024 19:59:32 : HR-Dispatcher DOB : Before condition checked : DateToVerify : 16/Jul SystemDate : 05/Aug
+08/05/2024 19:59:32 : HR-Dispatcher DOB : Dates are not matched :  DateToVerify : 16/Jul System date : 05/Aug
+08/05/2024 19:59:34 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3379 - DOB
+08/05/2024 19:59:34 : HR-Dispatcher DOB :  EmpID is :  3379
+08/05/2024 19:59:34 : HR-Dispatcher DOB :  EmpName is :  Jaswinder Singh
+08/05/2024 19:59:34 : HR-Dispatcher DOB :  EmpDepartment is :  Mobile Team
+08/05/2024 19:59:34 : HR-Dispatcher DOB :  EmpDOB is :  07/17/1986 00:00:00
+08/05/2024 19:59:34 : HR-Dispatcher DOB :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:34 : HR-Dispatcher DOB :   Business Exception should be emptyTrue
+08/05/2024 19:59:34 : HR-Dispatcher DOB :   DateToVerify 07/17/1986 00:00:00 : SystemDate : 08/05/2024 19:59:34
+08/05/2024 19:59:34 : HR-Dispatcher DOB : SystemDate :  05/Aug
+08/05/2024 19:59:34 : HR-Dispatcher DOB : Before condition checked : DateToVerify : 17/Jul SystemDate : 05/Aug
+08/05/2024 19:59:34 : HR-Dispatcher DOB : Dates are not matched :  DateToVerify : 17/Jul System date : 05/Aug
+08/05/2024 19:59:35 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3133 - DOB
+08/05/2024 19:59:35 : HR-Dispatcher DOB :  EmpID is :  3133
+08/05/2024 19:59:35 : HR-Dispatcher DOB :  EmpName is :  Nitika Shangari
+08/05/2024 19:59:35 : HR-Dispatcher DOB :  EmpDepartment is :  Indus - Functional
+08/05/2024 19:59:35 : HR-Dispatcher DOB :  EmpDOB is :  07/17/1993 00:00:00
+08/05/2024 19:59:35 : HR-Dispatcher DOB :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:35 : HR-Dispatcher DOB :   Business Exception should be emptyTrue
+08/05/2024 19:59:35 : HR-Dispatcher DOB :   DateToVerify 07/17/1993 00:00:00 : SystemDate : 08/05/2024 19:59:35
+08/05/2024 19:59:35 : HR-Dispatcher DOB : SystemDate :  05/Aug
+08/05/2024 19:59:35 : HR-Dispatcher DOB : Before condition checked : DateToVerify : 17/Jul SystemDate : 05/Aug
+08/05/2024 19:59:35 : HR-Dispatcher DOB : Dates are not matched :  DateToVerify : 17/Jul System date : 05/Aug
+08/05/2024 19:59:37 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3338 - DOB
+08/05/2024 19:59:37 : HR-Dispatcher DOB :  EmpID is :  3338
+08/05/2024 19:59:37 : HR-Dispatcher DOB :  EmpName is :  Inbasekaran
+08/05/2024 19:59:37 : HR-Dispatcher DOB :  EmpDepartment is :  Creative Labs
+08/05/2024 19:59:37 : HR-Dispatcher DOB :  EmpDOB is :  08/05/1990 00:00:00
+08/05/2024 19:59:37 : HR-Dispatcher DOB :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:37 : HR-Dispatcher DOB :   Business Exception should be emptyTrue
+08/05/2024 19:59:37 : HR-Dispatcher DOB :   DateToVerify 08/05/1990 00:00:00 : SystemDate : 08/05/2024 19:59:37
+08/05/2024 19:59:37 : HR-Dispatcher DOB : SystemDate :  05/Aug
+08/05/2024 19:59:37 : HR-Dispatcher DOB : Before condition checked : DateToVerify : 05/Aug SystemDate : 05/Aug
+08/05/2024 19:59:37 : HR-Dispatcher DOB : Dates are matched :  DateToVerify : 05/Aug System date : 05/Aug
+08/05/2024 19:59:37 : HR-Dispatcher DOB : Read WishNameDetails from sheet :  DOB_WishesName
+08/05/2024 19:59:37 : HR-Dispatcher DOB :   WishName Details :5
+08/05/2024 19:59:37 : HR-Dispatcher DOB :   Find Lookup Value :   Lookup ColumnName : DOB_WishesNameDT_WishName Count is : 5
+08/05/2024 19:59:37 : HR-Dispatcher DOB :   Add DataRow into FilterEmpDetails DT , dataRow details  :  3338 Inbasekaran Creative Labs DOB NA sakadav@bugraptors.com May the joy that you have spread in the past come back to you on this day. Wishing you a very happy birthday!
+08/05/2024 19:59:38 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3778 - DOB
+08/05/2024 19:59:38 : HR-Dispatcher DOB :  EmpID is :  3778
+08/05/2024 19:59:38 : HR-Dispatcher DOB :  EmpName is :  Anmol Kumar
+08/05/2024 19:59:38 : HR-Dispatcher DOB :  EmpDepartment is :  Dot Net
+08/05/2024 19:59:38 : HR-Dispatcher DOB :  EmpDOB is :  07/18/2001 00:00:00
+08/05/2024 19:59:38 : HR-Dispatcher DOB :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:38 : HR-Dispatcher DOB :   Business Exception should be emptyTrue
+08/05/2024 19:59:38 : HR-Dispatcher DOB :   DateToVerify 07/18/2001 00:00:00 : SystemDate : 08/05/2024 19:59:38
+08/05/2024 19:59:38 : HR-Dispatcher DOB : SystemDate :  05/Aug
+08/05/2024 19:59:38 : HR-Dispatcher DOB : Before condition checked : DateToVerify : 18/Jul SystemDate : 05/Aug
+08/05/2024 19:59:38 : HR-Dispatcher DOB : Dates are not matched :  DateToVerify : 18/Jul System date : 05/Aug
+08/05/2024 19:59:39 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3739 - DOB
+08/05/2024 19:59:39 : HR-Dispatcher DOB :  EmpID is :  3739
+08/05/2024 19:59:39 : HR-Dispatcher DOB :  EmpName is :  Isha Bharti
+08/05/2024 19:59:39 : HR-Dispatcher DOB :  EmpDepartment is :  Open Source
+08/05/2024 19:59:39 : HR-Dispatcher DOB :  EmpDOB is :  08/05/1999 00:00:00
+08/05/2024 19:59:39 : HR-Dispatcher DOB :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:39 : HR-Dispatcher DOB :   Business Exception should be emptyTrue
+08/05/2024 19:59:39 : HR-Dispatcher DOB :   DateToVerify 08/05/1999 00:00:00 : SystemDate : 08/05/2024 19:59:39
+08/05/2024 19:59:39 : HR-Dispatcher DOB : SystemDate :  05/Aug
+08/05/2024 19:59:39 : HR-Dispatcher DOB : Before condition checked : DateToVerify : 05/Aug SystemDate : 05/Aug
+08/05/2024 19:59:39 : HR-Dispatcher DOB : Dates are matched :  DateToVerify : 05/Aug System date : 05/Aug
+08/05/2024 19:59:39 : HR-Dispatcher DOB : Read WishNameDetails from sheet :  DOB_WishesName
+08/05/2024 19:59:39 : HR-Dispatcher DOB :   WishName Details :5
+08/05/2024 19:59:39 : HR-Dispatcher DOB :   Find Lookup Value :   Lookup ColumnName : DOB_WishesNameDT_WishName Count is : 5
+08/05/2024 19:59:39 : HR-Dispatcher DOB :   Add DataRow into FilterEmpDetails DT , dataRow details  :  3739 Isha Bharti Open Source DOB NA sakadav@bugraptors.com Count your life by smiles, not tears. Count your age by friends, not years. Happy birthday!
+08/05/2024 19:59:39 : HR-Dispatcher DOB :  Dt_EmpDetails should be empty : True
+08/05/2024 19:59:39 : HR-Dispatcher DOB : Dt_WishName should be empty : True
+08/05/2024 19:59:39 : HR-Dispatcher : Pass SheetName : DOJ
+08/05/2024 19:59:39 : HR-Dispatcher :  Condition Matched :  DOB DOJ
+08/05/2024 19:59:39 : HR-Dispatcher :  Read SheetName : DOJ
+08/05/2024 19:59:39 : HR-Dispatcher : Emp Details has been read from SheetName DOJ
+08/05/2024 19:59:39 : HR-Dispatcher :  FilterEmpdetails Before Count : 21
+08/05/2024 19:59:39 : HR-Dispatcher :  FilterEmpdetails After Count : 21
+08/05/2024 19:59:39 : HR-Dispatcher :  Not found any exception While read Sheet : DOJ
+08/05/2024 19:59:39 : HR-Dispatcher :  Before SheetName condition : DOJ DOB
+08/05/2024 19:59:39 DOJ : HR-Dispatcher :  After SheetName condition : DOJ DOJ
+08/05/2024 19:59:41 : HR-Dispatcher :  FilterEmpDetails DT Data  : 1764 - DOJ
+08/05/2024 19:59:41 : HR-Dispatcher DOJ :  EmpID is :  1764
+08/05/2024 19:59:41 : HR-Dispatcher DOJ :  EmpName is :  Kanika Vatsyayan
+08/05/2024 19:59:41 : HR-Dispatcher DOJ :  EmpDepartment is :  Raptors - Functional
+08/05/2024 19:59:41 : HR-Dispatcher DOJ :  EmpDOJ is :  07/01/2010 00:00:00
+08/05/2024 19:59:41 : HR-Dispatcher DOJ :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:41 : HR-Dispatcher DOJ:   Business Exception should be emptyTrue
+08/05/2024 19:59:41 : HR-Dispatcher DOJ:   DateToVerify 07/01/2010 00:00:00 : SystemDate : 08/05/2024 19:59:41
+08/05/2024 19:59:41 : HR-Dispatcher DOJ : SystemDate :  05/Aug
+08/05/2024 19:59:41 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 01/Jul SystemDate : 05/Aug
+08/05/2024 19:59:41 : HR-Dispatcher DOJ : Dates are not matched :  DateToVerify : 01/Jul System date : 05/Aug
+08/05/2024 19:59:42 : HR-Dispatcher :  FilterEmpDetails DT Data  : 1939 - DOJ
+08/05/2024 19:59:42 : HR-Dispatcher DOJ :  EmpID is :  1939
+08/05/2024 19:59:42 : HR-Dispatcher DOJ :  EmpName is :  Akhilesh Kumar
+08/05/2024 19:59:42 : HR-Dispatcher DOJ :  EmpDepartment is :  IT
+08/05/2024 19:59:42 : HR-Dispatcher DOJ :  EmpDOJ is :  07/01/2011 00:00:00
+08/05/2024 19:59:42 : HR-Dispatcher DOJ :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:42 : HR-Dispatcher DOJ:   Business Exception should be emptyTrue
+08/05/2024 19:59:42 : HR-Dispatcher DOJ:   DateToVerify 07/01/2011 00:00:00 : SystemDate : 08/05/2024 19:59:42
+08/05/2024 19:59:42 : HR-Dispatcher DOJ : SystemDate :  05/Aug
+08/05/2024 19:59:42 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 01/Jul SystemDate : 05/Aug
+08/05/2024 19:59:42 : HR-Dispatcher DOJ : Dates are not matched :  DateToVerify : 01/Jul System date : 05/Aug
+08/05/2024 19:59:42 : HR-Dispatcher :  FilterEmpDetails DT Data  : 2549 - DOJ
+08/05/2024 19:59:42 : HR-Dispatcher DOJ :  EmpID is :  2549
+08/05/2024 19:59:42 : HR-Dispatcher DOJ :  EmpName is :  Ramanjeet Singh
+08/05/2024 19:59:42 : HR-Dispatcher DOJ :  EmpDepartment is :  Digital Marketing
+08/05/2024 19:59:42 : HR-Dispatcher DOJ :  EmpDOJ is :  07/01/2015 00:00:00
+08/05/2024 19:59:42 : HR-Dispatcher DOJ :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:42 : HR-Dispatcher DOJ:   Business Exception should be emptyTrue
+08/05/2024 19:59:42 : HR-Dispatcher DOJ:   DateToVerify 07/01/2015 00:00:00 : SystemDate : 08/05/2024 19:59:42
+08/05/2024 19:59:42 : HR-Dispatcher DOJ : SystemDate :  05/Aug
+08/05/2024 19:59:42 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 01/Jul SystemDate : 05/Aug
+08/05/2024 19:59:42 : HR-Dispatcher DOJ : Dates are not matched :  DateToVerify : 01/Jul System date : 05/Aug
+08/05/2024 19:59:46 : HR-Dispatcher :  FilterEmpDetails DT Data  : 2678 - DOJ
+08/05/2024 19:59:46 : HR-Dispatcher DOJ :  EmpID is :  2678
+08/05/2024 19:59:46 : HR-Dispatcher DOJ :  EmpName is :  Pooja Gaba
+08/05/2024 19:59:46 : HR-Dispatcher DOJ :  EmpDepartment is :  Mobile Team
+08/05/2024 19:59:46 : HR-Dispatcher DOJ :  EmpDOJ is :  07/01/2016 00:00:00
+08/05/2024 19:59:46 : HR-Dispatcher DOJ :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:46 : HR-Dispatcher DOJ:   Business Exception should be emptyTrue
+08/05/2024 19:59:46 : HR-Dispatcher DOJ:   DateToVerify 07/01/2016 00:00:00 : SystemDate : 08/05/2024 19:59:46
+08/05/2024 19:59:46 : HR-Dispatcher DOJ : SystemDate :  05/Aug
+08/05/2024 19:59:46 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 01/Jul SystemDate : 05/Aug
+08/05/2024 19:59:46 : HR-Dispatcher DOJ : Dates are not matched :  DateToVerify : 01/Jul System date : 05/Aug
+08/05/2024 19:59:47 : HR-Dispatcher :  FilterEmpDetails DT Data  : 2679 - DOJ
+08/05/2024 19:59:47 : HR-Dispatcher DOJ :  EmpID is :  2679
+08/05/2024 19:59:47 : HR-Dispatcher DOJ :  EmpName is :  Sudhisha Dhawn
+08/05/2024 19:59:47 : HR-Dispatcher DOJ :  EmpDepartment is :  Mobile Team
+08/05/2024 19:59:47 : HR-Dispatcher DOJ :  EmpDOJ is :  07/01/2016 00:00:00
+08/05/2024 19:59:47 : HR-Dispatcher DOJ :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:47 : HR-Dispatcher DOJ:   Business Exception should be emptyTrue
+08/05/2024 19:59:47 : HR-Dispatcher DOJ:   DateToVerify 07/01/2016 00:00:00 : SystemDate : 08/05/2024 19:59:47
+08/05/2024 19:59:47 : HR-Dispatcher DOJ : SystemDate :  05/Aug
+08/05/2024 19:59:47 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 01/Jul SystemDate : 05/Aug
+08/05/2024 19:59:47 : HR-Dispatcher DOJ : Dates are not matched :  DateToVerify : 01/Jul System date : 05/Aug
+08/05/2024 19:59:48 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3095 - DOJ
+08/05/2024 19:59:48 : HR-Dispatcher DOJ :  EmpID is :  3095
+08/05/2024 19:59:48 : HR-Dispatcher DOJ :  EmpName is :  Shivam Kumar
+08/05/2024 19:59:48 : HR-Dispatcher DOJ :  EmpDepartment is :  Open Source
+08/05/2024 19:59:48 : HR-Dispatcher DOJ :  EmpDOJ is :  07/01/2019 00:00:00
+08/05/2024 19:59:48 : HR-Dispatcher DOJ :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:48 : HR-Dispatcher DOJ:   Business Exception should be emptyTrue
+08/05/2024 19:59:48 : HR-Dispatcher DOJ:   DateToVerify 07/01/2019 00:00:00 : SystemDate : 08/05/2024 19:59:48
+08/05/2024 19:59:48 : HR-Dispatcher DOJ : SystemDate :  05/Aug
+08/05/2024 19:59:48 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 01/Jul SystemDate : 05/Aug
+08/05/2024 19:59:48 : HR-Dispatcher DOJ : Dates are not matched :  DateToVerify : 01/Jul System date : 05/Aug
+08/05/2024 19:59:49 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3162 - DOJ
+08/05/2024 19:59:49 : HR-Dispatcher DOJ :  EmpID is :  3162
+08/05/2024 19:59:49 : HR-Dispatcher DOJ :  EmpName is :  Vipan Kumar
+08/05/2024 19:59:49 : HR-Dispatcher DOJ :  EmpDepartment is :  Creative Labs
+08/05/2024 19:59:49 : HR-Dispatcher DOJ :  EmpDOJ is :  07/01/2020 00:00:00
+08/05/2024 19:59:49 : HR-Dispatcher DOJ :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:49 : HR-Dispatcher DOJ:   Business Exception should be emptyTrue
+08/05/2024 19:59:49 : HR-Dispatcher DOJ:   DateToVerify 07/01/2020 00:00:00 : SystemDate : 08/05/2024 19:59:49
+08/05/2024 19:59:49 : HR-Dispatcher DOJ : SystemDate :  05/Aug
+08/05/2024 19:59:49 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 01/Jul SystemDate : 05/Aug
+08/05/2024 19:59:49 : HR-Dispatcher DOJ : Dates are not matched :  DateToVerify : 01/Jul System date : 05/Aug
+08/05/2024 19:59:50 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3376 - DOJ
+08/05/2024 19:59:50 : HR-Dispatcher DOJ :  EmpID is :  3376
+08/05/2024 19:59:50 : HR-Dispatcher DOJ :  EmpName is :  Nidhi
+08/05/2024 19:59:50 : HR-Dispatcher DOJ :  EmpDepartment is :  Raptors - Automation
+08/05/2024 19:59:50 : HR-Dispatcher DOJ :  EmpDOJ is :  07/01/2021 00:00:00
+08/05/2024 19:59:50 : HR-Dispatcher DOJ :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:50 : HR-Dispatcher DOJ:   Business Exception should be emptyTrue
+08/05/2024 19:59:50 : HR-Dispatcher DOJ:   DateToVerify 07/01/2021 00:00:00 : SystemDate : 08/05/2024 19:59:50
+08/05/2024 19:59:50 : HR-Dispatcher DOJ : SystemDate :  05/Aug
+08/05/2024 19:59:50 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 01/Jul SystemDate : 05/Aug
+08/05/2024 19:59:50 : HR-Dispatcher DOJ : Dates are not matched :  DateToVerify : 01/Jul System date : 05/Aug
+08/05/2024 19:59:51 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3384 - DOJ
+08/05/2024 19:59:51 : HR-Dispatcher DOJ :  EmpID is :  3384
+08/05/2024 19:59:51 : HR-Dispatcher DOJ :  EmpName is :  Anuj
+08/05/2024 19:59:51 : HR-Dispatcher DOJ :  EmpDepartment is :  Dot Net
+08/05/2024 19:59:51 : HR-Dispatcher DOJ :  EmpDOJ is :  07/01/2021 00:00:00
+08/05/2024 19:59:51 : HR-Dispatcher DOJ :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:51 : HR-Dispatcher DOJ:   Business Exception should be emptyTrue
+08/05/2024 19:59:51 : HR-Dispatcher DOJ:   DateToVerify 07/01/2021 00:00:00 : SystemDate : 08/05/2024 19:59:51
+08/05/2024 19:59:51 : HR-Dispatcher DOJ : SystemDate :  05/Aug
+08/05/2024 19:59:51 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 01/Jul SystemDate : 05/Aug
+08/05/2024 19:59:51 : HR-Dispatcher DOJ : Dates are not matched :  DateToVerify : 01/Jul System date : 05/Aug
+08/05/2024 19:59:53 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3385 - DOJ
+08/05/2024 19:59:53 : HR-Dispatcher DOJ :  EmpID is :  3385
+08/05/2024 19:59:53 : HR-Dispatcher DOJ :  EmpName is :  Ajay Kumar
+08/05/2024 19:59:53 : HR-Dispatcher DOJ :  EmpDepartment is :  Dot Net
+08/05/2024 19:59:53 : HR-Dispatcher DOJ :  EmpDOJ is :  07/01/2021 00:00:00
+08/05/2024 19:59:53 : HR-Dispatcher DOJ :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:53 : HR-Dispatcher DOJ:   Business Exception should be emptyTrue
+08/05/2024 19:59:53 : HR-Dispatcher DOJ:   DateToVerify 07/01/2021 00:00:00 : SystemDate : 08/05/2024 19:59:53
+08/05/2024 19:59:53 : HR-Dispatcher DOJ : SystemDate :  05/Aug
+08/05/2024 19:59:53 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 01/Jul SystemDate : 05/Aug
+08/05/2024 19:59:53 : HR-Dispatcher DOJ : Dates are not matched :  DateToVerify : 01/Jul System date : 05/Aug
+08/05/2024 19:59:54 : HR-Dispatcher :  FilterEmpDetails DT Data  : 2889 - DOJ
+08/05/2024 19:59:54 : HR-Dispatcher DOJ :  EmpID is :  2889
+08/05/2024 19:59:54 : HR-Dispatcher DOJ :  EmpName is :  Minkle Kalra
+08/05/2024 19:59:54 : HR-Dispatcher DOJ :  EmpDepartment is :  Digital Marketing
+08/05/2024 19:59:54 : HR-Dispatcher DOJ :  EmpDOJ is :  07/02/2018 00:00:00
+08/05/2024 19:59:54 : HR-Dispatcher DOJ :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:54 : HR-Dispatcher DOJ:   Business Exception should be emptyTrue
+08/05/2024 19:59:54 : HR-Dispatcher DOJ:   DateToVerify 07/02/2018 00:00:00 : SystemDate : 08/05/2024 19:59:54
+08/05/2024 19:59:54 : HR-Dispatcher DOJ : SystemDate :  05/Aug
+08/05/2024 19:59:54 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 02/Jul SystemDate : 05/Aug
+08/05/2024 19:59:54 : HR-Dispatcher DOJ : Dates are not matched :  DateToVerify : 02/Jul System date : 05/Aug
+08/05/2024 19:59:55 : HR-Dispatcher :  FilterEmpDetails DT Data  : 2935 - DOJ
+08/05/2024 19:59:55 : HR-Dispatcher DOJ :  EmpID is :  2935
+08/05/2024 19:59:55 : HR-Dispatcher DOJ :  EmpName is :  Nanhe Sharma
+08/05/2024 19:59:55 : HR-Dispatcher DOJ :  EmpDepartment is :  Dot Net
+08/05/2024 19:59:55 : HR-Dispatcher DOJ :  EmpDOJ is :  08/05/2018 00:00:00
+08/05/2024 19:59:55 : HR-Dispatcher DOJ :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:55 : HR-Dispatcher DOJ:   Business Exception should be emptyTrue
+08/05/2024 19:59:55 : HR-Dispatcher DOJ:   DateToVerify 08/05/2018 00:00:00 : SystemDate : 08/05/2024 19:59:55
+08/05/2024 19:59:55 : HR-Dispatcher DOJ : SystemDate :  05/Aug
+08/05/2024 19:59:55 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 05/Aug SystemDate : 05/Aug
+08/05/2024 19:59:55 : HR-Dispatcher DOJ : Dates are matched :  DateToVerify : 05/Aug System date : 05/Aug
+08/05/2024 19:59:55 : HR-Dispatcher DOJ : Read WishNameDetails from sheet :  DOJ_WishesName
+08/05/2024 19:59:55 : HR-Dispatcher DOJ: Find Lookup Value :   Lookup ColumnName :  DOJ  : Lookup TargetColumnName : DOJ_WishesName
+08/05/2024 19:59:55 : HR-Dispatcher DOJ:  Add DataRow into FilterEmpDetails DT , dataRow details  :  2935 Nanhe Sharma Dot Net DOJ 6 sakadav@bugraptors.com Filled with positivity, confidence, and honesty, we couldn’t have found anyone better than you for our team. Happy Workversary, buddy!
+08/05/2024 19:59:55 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3022 - DOJ
+08/05/2024 19:59:55 : HR-Dispatcher DOJ :  EmpID is :  3022
+08/05/2024 19:59:55 : HR-Dispatcher DOJ :  EmpName is :  Sunny Loomba 
+08/05/2024 19:59:55 : HR-Dispatcher DOJ :  EmpDepartment is :  Raptors - Automation
+08/05/2024 19:59:55 : HR-Dispatcher DOJ :  EmpDOJ is :  07/03/2019 00:00:00
+08/05/2024 19:59:55 : HR-Dispatcher DOJ :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:55 : HR-Dispatcher DOJ:   Business Exception should be emptyTrue
+08/05/2024 19:59:55 : HR-Dispatcher DOJ:   DateToVerify 07/03/2019 00:00:00 : SystemDate : 08/05/2024 19:59:55
+08/05/2024 19:59:55 : HR-Dispatcher DOJ : SystemDate :  05/Aug
+08/05/2024 19:59:55 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 03/Jul SystemDate : 05/Aug
+08/05/2024 19:59:55 : HR-Dispatcher DOJ : Dates are not matched :  DateToVerify : 03/Jul System date : 05/Aug
+08/05/2024 19:59:56 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3827 - DOJ
+08/05/2024 19:59:56 : HR-Dispatcher DOJ :  EmpID is :  3827
+08/05/2024 19:59:56 : HR-Dispatcher DOJ :  EmpName is :  Yugal Kishor Joshi
+08/05/2024 19:59:56 : HR-Dispatcher DOJ :  EmpDepartment is :  Indus Dev
+08/05/2024 19:59:56 : HR-Dispatcher DOJ :  EmpDOJ is :  07/03/2023 00:00:00
+08/05/2024 19:59:56 : HR-Dispatcher DOJ :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:56 : HR-Dispatcher DOJ:   Business Exception should be emptyTrue
+08/05/2024 19:59:56 : HR-Dispatcher DOJ:   DateToVerify 07/03/2023 00:00:00 : SystemDate : 08/05/2024 19:59:56
+08/05/2024 19:59:56 : HR-Dispatcher DOJ : SystemDate :  05/Aug
+08/05/2024 19:59:56 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 03/Jul SystemDate : 05/Aug
+08/05/2024 19:59:56 : HR-Dispatcher DOJ : Dates are not matched :  DateToVerify : 03/Jul System date : 05/Aug
+08/05/2024 19:59:57 : HR-Dispatcher :  FilterEmpDetails DT Data  : 2713 - DOJ
+08/05/2024 19:59:57 : HR-Dispatcher DOJ :  EmpID is :  2713
+08/05/2024 19:59:57 : HR-Dispatcher DOJ :  EmpName is :  Renu Thakur
+08/05/2024 19:59:57 : HR-Dispatcher DOJ :  EmpDepartment is :  Dot Net
+08/05/2024 19:59:57 : HR-Dispatcher DOJ :  EmpDOJ is :  07/04/2016 00:00:00
+08/05/2024 19:59:57 : HR-Dispatcher DOJ :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:57 : HR-Dispatcher DOJ:   Business Exception should be emptyTrue
+08/05/2024 19:59:57 : HR-Dispatcher DOJ:   DateToVerify 07/04/2016 00:00:00 : SystemDate : 08/05/2024 19:59:57
+08/05/2024 19:59:57 : HR-Dispatcher DOJ : SystemDate :  05/Aug
+08/05/2024 19:59:57 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 04/Jul SystemDate : 05/Aug
+08/05/2024 19:59:57 : HR-Dispatcher DOJ : Dates are not matched :  DateToVerify : 04/Jul System date : 05/Aug
+08/05/2024 19:59:59 : HR-Dispatcher :  FilterEmpDetails DT Data  : 2567 - DOJ
+08/05/2024 19:59:59 : HR-Dispatcher DOJ :  EmpID is :  2567
+08/05/2024 19:59:59 : HR-Dispatcher DOJ :  EmpName is :  Vivek Rana
+08/05/2024 19:59:59 : HR-Dispatcher DOJ :  EmpDepartment is :  Open Source
+08/05/2024 19:59:59 : HR-Dispatcher DOJ :  EmpDOJ is :  07/06/2015 00:00:00
+08/05/2024 19:59:59 : HR-Dispatcher DOJ :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 19:59:59 : HR-Dispatcher DOJ:   Business Exception should be emptyTrue
+08/05/2024 19:59:59 : HR-Dispatcher DOJ:   DateToVerify 07/06/2015 00:00:00 : SystemDate : 08/05/2024 19:59:59
+08/05/2024 19:59:59 : HR-Dispatcher DOJ : SystemDate :  05/Aug
+08/05/2024 19:59:59 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 06/Jul SystemDate : 05/Aug
+08/05/2024 19:59:59 : HR-Dispatcher DOJ : Dates are not matched :  DateToVerify : 06/Jul System date : 05/Aug
+08/05/2024 20:00:00 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3027 - DOJ
+08/05/2024 20:00:00 : HR-Dispatcher DOJ :  EmpID is :  3027
+08/05/2024 20:00:00 : HR-Dispatcher DOJ :  EmpName is :  Vegisetti Srinivas 
+08/05/2024 20:00:00 : HR-Dispatcher DOJ :  EmpDepartment is :  Raptors - Functional
+08/05/2024 20:00:00 : HR-Dispatcher DOJ :  EmpDOJ is :  07/10/2019 00:00:00
+08/05/2024 20:00:00 : HR-Dispatcher DOJ :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 20:00:00 : HR-Dispatcher DOJ:   Business Exception should be emptyTrue
+08/05/2024 20:00:00 : HR-Dispatcher DOJ:   DateToVerify 07/10/2019 00:00:00 : SystemDate : 08/05/2024 20:00:00
+08/05/2024 20:00:00 : HR-Dispatcher DOJ : SystemDate :  05/Aug
+08/05/2024 20:00:00 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 10/Jul SystemDate : 05/Aug
+08/05/2024 20:00:00 : HR-Dispatcher DOJ : Dates are not matched :  DateToVerify : 10/Jul System date : 05/Aug
+08/05/2024 20:00:01 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3618 - DOJ
+08/05/2024 20:00:01 : HR-Dispatcher DOJ :  EmpID is :  3618
+08/05/2024 20:00:01 : HR-Dispatcher DOJ :  EmpName is :  Gurwinder Singh
+08/05/2024 20:00:01 : HR-Dispatcher DOJ :  EmpDepartment is :  Open Source
+08/05/2024 20:00:01 : HR-Dispatcher DOJ :  EmpDOJ is :  07/12/2022 00:00:00
+08/05/2024 20:00:01 : HR-Dispatcher DOJ :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 20:00:01 : HR-Dispatcher DOJ:   Business Exception should be emptyTrue
+08/05/2024 20:00:01 : HR-Dispatcher DOJ:   DateToVerify 07/12/2022 00:00:00 : SystemDate : 08/05/2024 20:00:01
+08/05/2024 20:00:01 : HR-Dispatcher DOJ : SystemDate :  05/Aug
+08/05/2024 20:00:01 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 12/Jul SystemDate : 05/Aug
+08/05/2024 20:00:01 : HR-Dispatcher DOJ : Dates are not matched :  DateToVerify : 12/Jul System date : 05/Aug
+08/05/2024 20:00:01 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3029 - DOJ
+08/05/2024 20:00:02 : HR-Dispatcher DOJ :  EmpID is :  3029
+08/05/2024 20:00:02 : HR-Dispatcher DOJ :  EmpName is :  Tejinder Kumar
+08/05/2024 20:00:02 : HR-Dispatcher DOJ :  EmpDepartment is :  Open Source
+08/05/2024 20:00:02 : HR-Dispatcher DOJ :  EmpDOJ is :  07/15/2019 00:00:00
+08/05/2024 20:00:02 : HR-Dispatcher DOJ :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 20:00:02 : HR-Dispatcher DOJ:   Business Exception should be emptyTrue
+08/05/2024 20:00:02 : HR-Dispatcher DOJ:   DateToVerify 07/15/2019 00:00:00 : SystemDate : 08/05/2024 20:00:02
+08/05/2024 20:00:02 : HR-Dispatcher DOJ : SystemDate :  05/Aug
+08/05/2024 20:00:02 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 15/Jul SystemDate : 05/Aug
+08/05/2024 20:00:02 : HR-Dispatcher DOJ : Dates are not matched :  DateToVerify : 15/Jul System date : 05/Aug
+08/05/2024 20:00:02 : HR-Dispatcher :  FilterEmpDetails DT Data  : 1940 - DOJ
+08/05/2024 20:00:02 : HR-Dispatcher DOJ :  EmpID is :  1940
+08/05/2024 20:00:02 : HR-Dispatcher DOJ :  EmpName is :  Abhishek Vasudev
+08/05/2024 20:00:02 : HR-Dispatcher DOJ :  EmpDepartment is :  Designing
+08/05/2024 20:00:02 : HR-Dispatcher DOJ :  EmpDOJ is :  08/05/2011 00:00:00
+08/05/2024 20:00:02 : HR-Dispatcher DOJ :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 20:00:02 : HR-Dispatcher DOJ:   Business Exception should be emptyTrue
+08/05/2024 20:00:02 : HR-Dispatcher DOJ:   DateToVerify 08/05/2011 00:00:00 : SystemDate : 08/05/2024 20:00:02
+08/05/2024 20:00:02 : HR-Dispatcher DOJ : SystemDate :  05/Aug
+08/05/2024 20:00:02 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 05/Aug SystemDate : 05/Aug
+08/05/2024 20:00:02 : HR-Dispatcher DOJ : Dates are matched :  DateToVerify : 05/Aug System date : 05/Aug
+08/05/2024 20:00:02 : HR-Dispatcher DOJ : Read WishNameDetails from sheet :  DOJ_WishesName
+08/05/2024 20:00:02 : HR-Dispatcher DOJ: Find Lookup Value :   Lookup ColumnName :  DOJ  : Lookup TargetColumnName : DOJ_WishesName
+08/05/2024 20:00:02 : HR-Dispatcher DOJ:  Add DataRow into FilterEmpDetails DT , dataRow details  :  1940 Abhishek Vasudev Designing DOJ 13 sakadav@bugraptors.com Finding a co-worker like you is a matter of pride, and you continue to inspire us every day since you joined the tribe. Happy Work Anniversary, Mate!
+08/05/2024 20:00:03 : HR-Dispatcher :  FilterEmpDetails DT Data  : 2727 - DOJ
+08/05/2024 20:00:03 : HR-Dispatcher DOJ :  EmpID is :  2727
+08/05/2024 20:00:03 : HR-Dispatcher DOJ :  EmpName is :  Karanbir Kaur
+08/05/2024 20:00:03 : HR-Dispatcher DOJ :  EmpDepartment is :  Creative Labs
+08/05/2024 20:00:03 : HR-Dispatcher DOJ :  EmpDOJ is :  08/05/2016 00:00:00
+08/05/2024 20:00:03 : HR-Dispatcher DOJ :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 20:00:03 : HR-Dispatcher DOJ:   Business Exception should be emptyTrue
+08/05/2024 20:00:03 : HR-Dispatcher DOJ:   DateToVerify 08/05/2016 00:00:00 : SystemDate : 08/05/2024 20:00:03
+08/05/2024 20:00:03 : HR-Dispatcher DOJ : SystemDate :  05/Aug
+08/05/2024 20:00:03 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 05/Aug SystemDate : 05/Aug
+08/05/2024 20:00:03 : HR-Dispatcher DOJ : Dates are matched :  DateToVerify : 05/Aug System date : 05/Aug
+08/05/2024 20:00:03 : HR-Dispatcher DOJ : Read WishNameDetails from sheet :  DOJ_WishesName
+08/05/2024 20:00:03 : HR-Dispatcher DOJ: Find Lookup Value :   Lookup ColumnName :  DOJ  : Lookup TargetColumnName : DOJ_WishesName
+08/05/2024 20:00:03 : HR-Dispatcher DOJ:  Add DataRow into FilterEmpDetails DT , dataRow details  :  2727 Karanbir Kaur Creative Labs DOJ 8 sakadav@bugraptors.com Only a few people like you can actually show utmost dedication at their jobs. We congratulate you for being with us and wish you a happy work anniversary.
+08/05/2024 20:00:03 : HR-Dispatcher DOJ :  Dt_EmpDetails should be empty : True
+08/05/2024 20:00:03 : HR-Dispatcher DOJ : Dt_WishName should be empty : True
+08/05/2024 20:00:03 : HR-Dispatcher : Pass SheetName : DOW
+08/05/2024 20:00:03 : HR-Dispatcher :  Condition Matched :  DOB DOW
+08/05/2024 20:00:03 : HR-Dispatcher :  Read SheetName : DOW
+08/05/2024 20:00:03 : HR-Dispatcher : Emp Details has been read from SheetName DOW
+08/05/2024 20:00:03 : HR-Dispatcher :  FilterEmpdetails Before Count : 15
+08/05/2024 20:00:03 : HR-Dispatcher :  FilterEmpdetails After Count : 15
+08/05/2024 20:00:03 : HR-Dispatcher :  Not found any exception While read Sheet : DOW
+08/05/2024 20:00:03 : HR-Dispatcher :  Before SheetName condition : DOW DOB
+08/05/2024 20:00:03 : HR-Dispatcher DOW :  After SheetName condition : DOW DOW
+08/05/2024 20:00:04 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3162 - DOW
+08/05/2024 20:00:04 : HR-Dispatcher DOW :  EmpID is :  3162
+08/05/2024 20:00:04 : HR-Dispatcher DOW :  EmpName is :  Vipan Kumar
+08/05/2024 20:00:04 : HR-Dispatcher DOW :  EmpDepartment is :  Creative Labs
+08/05/2024 20:00:04 : HR-Dispatcher DOW :  EmpDOW is :  07/01/2020 00:00:00
+08/05/2024 20:00:04 : HR-Dispatcher DOW :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 20:00:04 : HR-Dispatcher DOW:   Business Exception should be emptyTrue
+08/05/2024 20:00:04 : HR-Dispatcher DOW :   DateToVerify 07/01/2020 00:00:00 : SystemDate : 08/05/2024 20:00:04
+08/05/2024 20:00:04 : HR-Dispatcher DOW : SystemDate :  05/Aug
+08/05/2024 20:00:04 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 01/Jul SystemDate : 05/Aug
+08/05/2024 20:00:04 : HR-Dispatcher DOW : Dates are not matched :  DateToVerify : 01/Jul System date : 05/Aug
+08/05/2024 20:00:06 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3376 - DOW
+08/05/2024 20:00:06 : HR-Dispatcher DOW :  EmpID is :  3376
+08/05/2024 20:00:06 : HR-Dispatcher DOW :  EmpName is :  Nidhi
+08/05/2024 20:00:06 : HR-Dispatcher DOW :  EmpDepartment is :  Raptors - Automation
+08/05/2024 20:00:06 : HR-Dispatcher DOW :  EmpDOW is :  07/01/2021 00:00:00
+08/05/2024 20:00:06 : HR-Dispatcher DOW :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 20:00:06 : HR-Dispatcher DOW:   Business Exception should be emptyTrue
+08/05/2024 20:00:06 : HR-Dispatcher DOW :   DateToVerify 07/01/2021 00:00:00 : SystemDate : 08/05/2024 20:00:06
+08/05/2024 20:00:06 : HR-Dispatcher DOW : SystemDate :  05/Aug
+08/05/2024 20:00:06 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 01/Jul SystemDate : 05/Aug
+08/05/2024 20:00:06 : HR-Dispatcher DOW : Dates are not matched :  DateToVerify : 01/Jul System date : 05/Aug
+08/05/2024 20:00:07 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3384 - DOW
+08/05/2024 20:00:07 : HR-Dispatcher DOW :  EmpID is :  3384
+08/05/2024 20:00:07 : HR-Dispatcher DOW :  EmpName is :  Anuj
+08/05/2024 20:00:07 : HR-Dispatcher DOW :  EmpDepartment is :  Dot Net
+08/05/2024 20:00:07 : HR-Dispatcher DOW :  EmpDOW is :  07/01/2021 00:00:00
+08/05/2024 20:00:07 : HR-Dispatcher DOW :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 20:00:07 : HR-Dispatcher DOW:   Business Exception should be emptyTrue
+08/05/2024 20:00:07 : HR-Dispatcher DOW :   DateToVerify 07/01/2021 00:00:00 : SystemDate : 08/05/2024 20:00:07
+08/05/2024 20:00:07 : HR-Dispatcher DOW : SystemDate :  05/Aug
+08/05/2024 20:00:07 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 01/Jul SystemDate : 05/Aug
+08/05/2024 20:00:07 : HR-Dispatcher DOW : Dates are not matched :  DateToVerify : 01/Jul System date : 05/Aug
+08/05/2024 20:00:08 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3385 - DOW
+08/05/2024 20:00:08 : HR-Dispatcher DOW :  EmpID is :  3385
+08/05/2024 20:00:08 : HR-Dispatcher DOW :  EmpName is :  Ajay Kumar
+08/05/2024 20:00:08 : HR-Dispatcher DOW :  EmpDepartment is :  Dot Net
+08/05/2024 20:00:08 : HR-Dispatcher DOW :  EmpDOW is :  07/01/2021 00:00:00
+08/05/2024 20:00:08 : HR-Dispatcher DOW :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 20:00:08 : HR-Dispatcher DOW:   Business Exception should be emptyTrue
+08/05/2024 20:00:08 : HR-Dispatcher DOW :   DateToVerify 07/01/2021 00:00:00 : SystemDate : 08/05/2024 20:00:08
+08/05/2024 20:00:08 : HR-Dispatcher DOW : SystemDate :  05/Aug
+08/05/2024 20:00:08 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 01/Jul SystemDate : 05/Aug
+08/05/2024 20:00:08 : HR-Dispatcher DOW : Dates are not matched :  DateToVerify : 01/Jul System date : 05/Aug
+08/05/2024 20:00:09 : HR-Dispatcher :  FilterEmpDetails DT Data  : 2889 - DOW
+08/05/2024 20:00:09 : HR-Dispatcher DOW :  EmpID is :  2889
+08/05/2024 20:00:09 : HR-Dispatcher DOW :  EmpName is :  Minkle Kalra
+08/05/2024 20:00:09 : HR-Dispatcher DOW :  EmpDepartment is :  Digital Marketing
+08/05/2024 20:00:09 : HR-Dispatcher DOW :  EmpDOW is :  07/02/2018 00:00:00
+08/05/2024 20:00:09 : HR-Dispatcher DOW :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 20:00:09 : HR-Dispatcher DOW:   Business Exception should be emptyTrue
+08/05/2024 20:00:09 : HR-Dispatcher DOW :   DateToVerify 07/02/2018 00:00:00 : SystemDate : 08/05/2024 20:00:09
+08/05/2024 20:00:09 : HR-Dispatcher DOW : SystemDate :  05/Aug
+08/05/2024 20:00:09 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 02/Jul SystemDate : 05/Aug
+08/05/2024 20:00:09 : HR-Dispatcher DOW : Dates are not matched :  DateToVerify : 02/Jul System date : 05/Aug
+08/05/2024 20:00:10 : HR-Dispatcher :  FilterEmpDetails DT Data  : 2935 - DOW
+08/05/2024 20:00:10 : HR-Dispatcher DOW :  EmpID is :  2935
+08/05/2024 20:00:10 : HR-Dispatcher DOW :  EmpName is :  Nanhe Sharma
+08/05/2024 20:00:10 : HR-Dispatcher DOW :  EmpDepartment is :  Dot Net
+08/05/2024 20:00:10 : HR-Dispatcher DOW :  EmpDOW is :  07/03/2018 00:00:00
+08/05/2024 20:00:10 : HR-Dispatcher DOW :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 20:00:10 : HR-Dispatcher DOW:   Business Exception should be emptyTrue
+08/05/2024 20:00:10 : HR-Dispatcher DOW :   DateToVerify 07/03/2018 00:00:00 : SystemDate : 08/05/2024 20:00:10
+08/05/2024 20:00:10 : HR-Dispatcher DOW : SystemDate :  05/Aug
+08/05/2024 20:00:10 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 03/Jul SystemDate : 05/Aug
+08/05/2024 20:00:10 : HR-Dispatcher DOW : Dates are not matched :  DateToVerify : 03/Jul System date : 05/Aug
+08/05/2024 20:00:11 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3022 - DOW
+08/05/2024 20:00:11 : HR-Dispatcher DOW :  EmpID is :  3022
+08/05/2024 20:00:11 : HR-Dispatcher DOW :  EmpName is :  Sunny Loomba 
+08/05/2024 20:00:11 : HR-Dispatcher DOW :  EmpDepartment is :  Raptors - Automation
+08/05/2024 20:00:11 : HR-Dispatcher DOW :  EmpDOW is :  07/03/2019 00:00:00
+08/05/2024 20:00:11 : HR-Dispatcher DOW :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 20:00:11 : HR-Dispatcher DOW:   Business Exception should be emptyTrue
+08/05/2024 20:00:11 : HR-Dispatcher DOW :   DateToVerify 07/03/2019 00:00:00 : SystemDate : 08/05/2024 20:00:11
+08/05/2024 20:00:11 : HR-Dispatcher DOW : SystemDate :  05/Aug
+08/05/2024 20:00:11 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 03/Jul SystemDate : 05/Aug
+08/05/2024 20:00:11 : HR-Dispatcher DOW : Dates are not matched :  DateToVerify : 03/Jul System date : 05/Aug
+08/05/2024 20:00:13 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3827 - DOW
+08/05/2024 20:00:13 : HR-Dispatcher DOW :  EmpID is :  3827
+08/05/2024 20:00:13 : HR-Dispatcher DOW :  EmpName is :  Yugal Kishor Joshi
+08/05/2024 20:00:13 : HR-Dispatcher DOW :  EmpDepartment is :  Indus Dev
+08/05/2024 20:00:13 : HR-Dispatcher DOW :  EmpDOW is :  07/03/2023 00:00:00
+08/05/2024 20:00:13 : HR-Dispatcher DOW :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 20:00:13 : HR-Dispatcher DOW:   Business Exception should be emptyTrue
+08/05/2024 20:00:13 : HR-Dispatcher DOW :   DateToVerify 07/03/2023 00:00:00 : SystemDate : 08/05/2024 20:00:13
+08/05/2024 20:00:13 : HR-Dispatcher DOW : SystemDate :  05/Aug
+08/05/2024 20:00:13 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 03/Jul SystemDate : 05/Aug
+08/05/2024 20:00:13 : HR-Dispatcher DOW : Dates are not matched :  DateToVerify : 03/Jul System date : 05/Aug
+08/05/2024 20:00:14 : HR-Dispatcher :  FilterEmpDetails DT Data  : 2713 - DOW
+08/05/2024 20:00:14 : HR-Dispatcher DOW :  EmpID is :  2713
+08/05/2024 20:00:14 : HR-Dispatcher DOW :  EmpName is :  Renu Thakur
+08/05/2024 20:00:14 : HR-Dispatcher DOW :  EmpDepartment is :  Dot Net
+08/05/2024 20:00:14 : HR-Dispatcher DOW :  EmpDOW is :  07/04/2016 00:00:00
+08/05/2024 20:00:14 : HR-Dispatcher DOW :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 20:00:14 : HR-Dispatcher DOW:   Business Exception should be emptyTrue
+08/05/2024 20:00:14 : HR-Dispatcher DOW :   DateToVerify 07/04/2016 00:00:00 : SystemDate : 08/05/2024 20:00:14
+08/05/2024 20:00:14 : HR-Dispatcher DOW : SystemDate :  05/Aug
+08/05/2024 20:00:14 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 04/Jul SystemDate : 05/Aug
+08/05/2024 20:00:14 : HR-Dispatcher DOW : Dates are not matched :  DateToVerify : 04/Jul System date : 05/Aug
+08/05/2024 20:00:16 : HR-Dispatcher :  FilterEmpDetails DT Data  : 2567 - DOW
+08/05/2024 20:00:16 : HR-Dispatcher DOW :  EmpID is :  2567
+08/05/2024 20:00:16 : HR-Dispatcher DOW :  EmpName is :  Vivek Rana
+08/05/2024 20:00:16 : HR-Dispatcher DOW :  EmpDepartment is :  Open Source
+08/05/2024 20:00:16 : HR-Dispatcher DOW :  EmpDOW is :  07/06/2015 00:00:00
+08/05/2024 20:00:16 : HR-Dispatcher DOW :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 20:00:16 : HR-Dispatcher DOW:   Business Exception should be emptyTrue
+08/05/2024 20:00:16 : HR-Dispatcher DOW :   DateToVerify 07/06/2015 00:00:00 : SystemDate : 08/05/2024 20:00:16
+08/05/2024 20:00:16 : HR-Dispatcher DOW : SystemDate :  05/Aug
+08/05/2024 20:00:16 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 06/Jul SystemDate : 05/Aug
+08/05/2024 20:00:16 : HR-Dispatcher DOW : Dates are not matched :  DateToVerify : 06/Jul System date : 05/Aug
+08/05/2024 20:00:16 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3027 - DOW
+08/05/2024 20:00:16 : HR-Dispatcher DOW :  EmpID is :  3027
+08/05/2024 20:00:16 : HR-Dispatcher DOW :  EmpName is :  Vegisetti Srinivas 
+08/05/2024 20:00:16 : HR-Dispatcher DOW :  EmpDepartment is :  Raptors - Functional
+08/05/2024 20:00:16 : HR-Dispatcher DOW :  EmpDOW is :  07/10/2019 00:00:00
+08/05/2024 20:00:16 : HR-Dispatcher DOW :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 20:00:16 : HR-Dispatcher DOW:   Business Exception should be emptyTrue
+08/05/2024 20:00:17 : HR-Dispatcher DOW :   DateToVerify 07/10/2019 00:00:00 : SystemDate : 08/05/2024 20:00:17
+08/05/2024 20:00:17 : HR-Dispatcher DOW : SystemDate :  05/Aug
+08/05/2024 20:00:17 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 10/Jul SystemDate : 05/Aug
+08/05/2024 20:00:17 : HR-Dispatcher DOW : Dates are not matched :  DateToVerify : 10/Jul System date : 05/Aug
+08/05/2024 20:00:17 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3618 - DOW
+08/05/2024 20:00:17 : HR-Dispatcher DOW :  EmpID is :  3618
+08/05/2024 20:00:17 : HR-Dispatcher DOW :  EmpName is :  Gurwinder Singh
+08/05/2024 20:00:17 : HR-Dispatcher DOW :  EmpDepartment is :  Open Source
+08/05/2024 20:00:17 : HR-Dispatcher DOW :  EmpDOW is :  07/12/2022 00:00:00
+08/05/2024 20:00:17 : HR-Dispatcher DOW :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 20:00:17 : HR-Dispatcher DOW:   Business Exception should be emptyTrue
+08/05/2024 20:00:17 : HR-Dispatcher DOW :   DateToVerify 07/12/2022 00:00:00 : SystemDate : 08/05/2024 20:00:17
+08/05/2024 20:00:17 : HR-Dispatcher DOW : SystemDate :  05/Aug
+08/05/2024 20:00:17 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 12/Jul SystemDate : 05/Aug
+08/05/2024 20:00:17 : HR-Dispatcher DOW : Dates are not matched :  DateToVerify : 12/Jul System date : 05/Aug
+08/05/2024 20:00:18 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3029 - DOW
+08/05/2024 20:00:18 : HR-Dispatcher DOW :  EmpID is :  3029
+08/05/2024 20:00:18 : HR-Dispatcher DOW :  EmpName is :  Tejinder Kumar
+08/05/2024 20:00:18 : HR-Dispatcher DOW :  EmpDepartment is :  Open Source
+08/05/2024 20:00:18 : HR-Dispatcher DOW :  EmpDOW is :  07/15/2019 00:00:00
+08/05/2024 20:00:18 : HR-Dispatcher DOW :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 20:00:18 : HR-Dispatcher DOW:   Business Exception should be emptyTrue
+08/05/2024 20:00:18 : HR-Dispatcher DOW :   DateToVerify 07/15/2019 00:00:00 : SystemDate : 08/05/2024 20:00:18
+08/05/2024 20:00:18 : HR-Dispatcher DOW : SystemDate :  05/Aug
+08/05/2024 20:00:18 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 15/Jul SystemDate : 05/Aug
+08/05/2024 20:00:18 : HR-Dispatcher DOW : Dates are not matched :  DateToVerify : 15/Jul System date : 05/Aug
+08/05/2024 20:00:20 : HR-Dispatcher :  FilterEmpDetails DT Data  : 1940 - DOW
+08/05/2024 20:00:20 : HR-Dispatcher DOW :  EmpID is :  1940
+08/05/2024 20:00:20 : HR-Dispatcher DOW :  EmpName is :  Abhishek Vasudev
+08/05/2024 20:00:20 : HR-Dispatcher DOW :  EmpDepartment is :  Designing
+08/05/2024 20:00:20 : HR-Dispatcher DOW :  EmpDOW is :  08/05/2011 00:00:00
+08/05/2024 20:00:20 : HR-Dispatcher DOW :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 20:00:20 : HR-Dispatcher DOW:   Business Exception should be emptyTrue
+08/05/2024 20:00:20 : HR-Dispatcher DOW :   DateToVerify 08/05/2011 00:00:00 : SystemDate : 08/05/2024 20:00:20
+08/05/2024 20:00:20 : HR-Dispatcher DOW : SystemDate :  05/Aug
+08/05/2024 20:00:20 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 05/Aug SystemDate : 05/Aug
+08/05/2024 20:00:20 : HR-Dispatcher DOJ : Dates are matched :  DateToVerify : 05/Aug System date : 05/Aug
+08/05/2024 20:00:20 : HR-Dispatcher DOJ : Read WishNameDetails from sheet :  DOJ_WishesName
+08/05/2024 20:00:20 : HR-Dispatcher DOW:  DOW  : Lookup TargetColumnName : DOW_WishesName
+08/05/2024 20:00:20 : HR-Dispatcher DOW :  Add DataRow into FilterEmpDetails DT , dataRow details  :  1940 Abhishek Vasudev Designing DOW NA sakadav@bugraptors.com A successful marriage requires falling in love many times, always with the same person.
+08/05/2024 20:00:21 : HR-Dispatcher :  FilterEmpDetails DT Data  : 2727 - DOW
+08/05/2024 20:00:21 : HR-Dispatcher DOW :  EmpID is :  2727
+08/05/2024 20:00:21 : HR-Dispatcher DOW :  EmpName is :  Karanbir Kaur
+08/05/2024 20:00:21 : HR-Dispatcher DOW :  EmpDepartment is :  Creative Labs
+08/05/2024 20:00:21 : HR-Dispatcher DOW :  EmpDOW is :  08/05/2016 00:00:00
+08/05/2024 20:00:21 : HR-Dispatcher DOW :  EmpEmailID is :  sakadav@bugraptors.com
+08/05/2024 20:00:21 : HR-Dispatcher DOW:   Business Exception should be emptyTrue
+08/05/2024 20:00:21 : HR-Dispatcher DOW :   DateToVerify 08/05/2016 00:00:00 : SystemDate : 08/05/2024 20:00:21
+08/05/2024 20:00:21 : HR-Dispatcher DOW : SystemDate :  05/Aug
+08/05/2024 20:00:21 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 05/Aug SystemDate : 05/Aug
+08/05/2024 20:00:21 : HR-Dispatcher DOJ : Dates are matched :  DateToVerify : 05/Aug System date : 05/Aug
+08/05/2024 20:00:21 : HR-Dispatcher DOJ : Read WishNameDetails from sheet :  DOJ_WishesName
+08/05/2024 20:00:21 : HR-Dispatcher DOW:  DOW  : Lookup TargetColumnName : DOW_WishesName
+08/05/2024 20:00:21 : HR-Dispatcher DOW :  Add DataRow into FilterEmpDetails DT , dataRow details  :  2727 Karanbir Kaur Creative Labs DOW NA sakadav@bugraptors.com A successful marriage requires falling in love many times, always with the same person.
+08/05/2024 20:00:21 : HR-Dispatcher :  Dt_EmpDetails should be empty : True
+08/05/2024 20:00:21 : HR-Dispatcher : Dt_WishName should be empty : True
+08/05/2024 20:00:21 : HR-Dispatcher : FilterEmpDetail added into sheet, SheetName is : EmpDataFilterEmpDetails DT Count is : 9
+08/05/2024 20:00:21 : HR-Dispatcher :  Before Pass FilterEmpDetails DT Count is : 9
+08/05/2024 20:00:21 : HR-Dispatcher :  After Pass out_FilterEmpDetails DT Count is : 9
+08/05/2024 20:00:21 : HR-Dispatcher :  Filter Empdetails has been completed now moving to Add empDetail into Queue 
+08/05/2024 20:00:21 : HR-Dispatcher :  Get Queue/Transaction details from queue with unique reference : 3449 - DOB
+08/05/2024 20:00:22 : HR-Dispatcher :  Get Queue/Transaction details from queue with unique reference : 1587 - DOB
+08/05/2024 20:00:22 : HR-Dispatcher :  Get Queue/Transaction details from queue with unique reference : 3338 - DOB
+08/05/2024 20:00:22 : HR-Dispatcher :  Get Queue/Transaction details from queue with unique reference : 3739 - DOB
+08/05/2024 20:00:23 : HR-Dispatcher :  Get Queue/Transaction details from queue with unique reference : 2935 - DOJ
+08/05/2024 20:00:24 : HR-Dispatcher :  Get Queue/Transaction details from queue with unique reference : 1940 - DOJ
+08/05/2024 20:00:24 : HR-Dispatcher :  Get Queue/Transaction details from queue with unique reference : 2727 - DOJ
+08/05/2024 20:00:25 : HR-Dispatcher :  Get Queue/Transaction details from queue with unique reference : 1940 - DOW
+08/05/2024 20:00:25 : HR-Dispatcher :  Get Queue/Transaction details from queue with unique reference : 2727 - DOW
+08/05/2024 20:00:26 : HR-Dispatcher :  Process has Ended for Filter Empdetails and Add into Queue 
