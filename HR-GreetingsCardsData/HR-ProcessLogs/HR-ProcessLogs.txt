@@ -1,3 +1,3 @@
 ﻿Log File Path : HR-GreetingsCardsData\HR-ProcessLogs\HR-ProcessLogs.txt
-08/31/2024 20:54:28 : HR-Dispatcher :  Process has started for Filter Empdetails and Add into Queue 
-08/31/2024 20:54:28 : HR-Dispatcher : Find EmpDetailsExcelFile at one drive location Path : HR-GreetingsCardsData\EmpDetails : Search Query : EmpDetails.xlsx
+09/01/2024 10:32:37 : HR-Dispatcher :  Process has started for Filter Empdetails and Add into Queue 
+09/01/2024 10:32:37 : HR-Dispatcher : Find EmpDetailsExcelFile at one drive location Path : HR-GreetingsCardsData\EmpDetails : Search Query : EmpDetails.xlsx
