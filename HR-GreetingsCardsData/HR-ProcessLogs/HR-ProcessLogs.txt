@@ -1,3 +1,91 @@
 ﻿Log File Path : HR-GreetingsCardsData\HR-ProcessLogs\HR-ProcessLogs.txt
-09/01/2024 10:32:37 : HR-Dispatcher :  Process has started for Filter Empdetails and Add into Queue 
-09/01/2024 10:32:37 : HR-Dispatcher : Find EmpDetailsExcelFile at one drive location Path : HR-GreetingsCardsData\EmpDetails : Search Query : EmpDetails.xlsx
+09/03/2024 19:45:45 : HR-Dispatcher :  Process has started for Filter Empdetails and Add into Queue 
+09/03/2024 19:45:46 : HR-Dispatcher : Find EmpDetailsExcelFile at one drive location Path : HR-GreetingsCardsData\EmpDetails : Search Query : EmpDetails.xlsx
+09/03/2024 19:45:46 : HR-Dispatcher :  Lets build FilterEmpDetails DT with columns Name : EmpID, EmpName, EmpDepartment, EmpTemplateName, EmpYearsOfExperience, EmpEmailID, EmpWishesName, EmpImageName. 
+09/03/2024 19:45:46 : HR-Dispatcher :  FilterEmpDetails DT has been build with columns Name : EmpID, EmpName, EmpDepartment, EmpTemplateName, EmpYearsOfExperience, EmpEmailID, EmpWishesName, EmpImageName. 8
+09/03/2024 19:45:46 : HR-Dispatcher :  Read sheetNames from Config File :  DOB,DOJ,DOW
+09/03/2024 19:45:46 : HR-Dispatcher :  SheetNames List has been configured 
+09/03/2024 19:45:46 : HR-Dispatcher : Pass SheetName : DOB
+09/03/2024 19:45:46 : HR-Dispatcher :  Condition Matched :  DOB DOB
+09/03/2024 19:45:46 : HR-Dispatcher :  Read SheetName : DOB
+09/03/2024 19:45:46 : HR-Dispatcher : Emp Details has been read from SheetName DOB
+09/03/2024 19:45:46 : HR-Dispatcher :  FilterEmpdetails Before Count : 49
+09/03/2024 19:45:46 : HR-Dispatcher :  FilterEmpdetails After Count : 49
+09/03/2024 19:45:46 : HR-Dispatcher :  Not found any exception While read Sheet : DOB
+09/03/2024 19:45:46 : HR-Dispatcher :  Before SheetName condition : DOB DOB
+09/03/2024 19:45:46 : HR-Dispatcher DOB :  After SheetName condition : DOB DOB
+09/03/2024 19:45:47 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3162 - DOB
+09/03/2024 19:45:47 : HR-Dispatcher DOB :  EmpID is :  3162
+09/03/2024 19:45:47 : HR-Dispatcher DOB :  EmpName is :  Vipan Kumar
+09/03/2024 19:45:47 : HR-Dispatcher DOB :  EmpDepartment is :  Creative Labs
+09/03/2024 19:45:47 : HR-Dispatcher DOB :  EmpDate is :  09/04/2023 00:00:00
+09/03/2024 19:45:47 : HR-Dispatcher DOB :  EmpEmailID is :  sakadav@bugraptors.com
+09/03/2024 19:45:47 : HR-Dispatcher DOB :   Business Exception should be emptyTrue
+09/03/2024 19:45:47 : HR-Dispatcher DOB :   DateToVerify 09/04/2023 00:00:00 : SystemDate : 09/03/2024 19:45:47
+09/03/2024 19:45:47 : HR-Dispatcher DOB : SystemDate :  03/Sep
+09/03/2024 19:45:47 : HR-Dispatcher DOB : Before condition checked : DateToVerify : 04/Sep SystemDate : 04/Sep
+09/03/2024 19:45:47 : HR-Dispatcher DOB : Dates are matched :  DateToVerify : 04/Sep System date : 04/Sep
+09/03/2024 19:45:47 : HR-Dispatcher DOB : Read WishNameDetails from sheet :  DOB__Greetings
+09/03/2024 19:45:47 : HR-Dispatcher DOB :   WishName Details :5
+09/03/2024 19:45:47 : HR-Dispatcher DOB :   Find Lookup Value :   Lookup ColumnName : DOB_WishesNameDT_WishName Count is : 5
+09/03/2024 19:45:47 : HR-Dispatcher DOB :   Add DataRow into FilterEmpDetails DT , dataRow details  :  3162 Vipan Kumar Creative Labs DOB NA sakadav@bugraptors.com May the joy that you have spread in the past come back to you on this day. Wishing you a very happy birthday!
+09/03/2024 19:45:47 : HR-Dispatcher DOB :  Dt_EmpDetails should be empty : True
+09/03/2024 19:45:47 : HR-Dispatcher DOB : Dt_WishName should be empty : True
+09/03/2024 19:45:47 : HR-Dispatcher : Pass SheetName : DOJ
+09/03/2024 19:45:47 : HR-Dispatcher :  Condition Matched :  DOB DOJ
+09/03/2024 19:45:47 : HR-Dispatcher :  Read SheetName : DOJ
+09/03/2024 19:45:47 : HR-Dispatcher : Emp Details has been read from SheetName DOJ
+09/03/2024 19:45:47 : HR-Dispatcher :  FilterEmpdetails Before Count : 49
+09/03/2024 19:45:47 : HR-Dispatcher :  FilterEmpdetails After Count : 49
+09/03/2024 19:45:48 : HR-Dispatcher :  Not found any exception While read Sheet : DOJ
+09/03/2024 19:45:48 : HR-Dispatcher :  Before SheetName condition : DOJ DOB
+09/03/2024 19:45:48 DOJ : HR-Dispatcher :  After SheetName condition : DOJ DOJ
+09/03/2024 19:45:48 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3162 - DOJ
+09/03/2024 19:45:48 : HR-Dispatcher DOJ :  EmpID is :  3162
+09/03/2024 19:45:48 : HR-Dispatcher DOJ :  EmpName is :  Vipan Kumar
+09/03/2024 19:45:48 : HR-Dispatcher DOJ :  EmpDepartment is :  Creative Labs
+09/03/2024 19:45:48 : HR-Dispatcher DOJ :  EmpDate is :  09/04/2023 00:00:00
+09/03/2024 19:45:48 : HR-Dispatcher DOJ :  EmpEmailID is :  sakadav@bugraptors.com
+09/03/2024 19:45:48 : HR-Dispatcher DOJ:   Business Exception should be emptyTrue
+09/03/2024 19:45:48 : HR-Dispatcher DOJ:   DateToVerify 09/04/2023 00:00:00 : SystemDate : 09/03/2024 19:45:48
+09/03/2024 19:45:48 : HR-Dispatcher DOJ : SystemDate :  03/Sep
+09/03/2024 19:45:48 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 04/Sep SystemDate : 04/Sep
+09/03/2024 19:45:48 : HR-Dispatcher DOJ : Dates are matched :  DateToVerify : 04/Sep System date : 04/Sep
+09/03/2024 19:45:48 : HR-Dispatcher DOJ : Read WishNameDetails from sheet :  DOJ__Greetings
+09/03/2024 19:45:48 : HR-Dispatcher DOJ: Find Lookup Value :   Lookup ColumnName :  DOJ  : Lookup TargetColumnName : DOJ_WishesName
+09/03/2024 19:45:48 : HR-Dispatcher DOJ:  Add DataRow into FilterEmpDetails DT , dataRow details  :  3162 Vipan Kumar Creative Labs DOJ 1 sakadav@bugraptors.com Do you know it takes a person with strong character and willpower to stay dedicated and loyal at their job? And you are that person! Best wishes on your work anniversary.
+09/03/2024 19:45:48 : HR-Dispatcher DOJ :  Dt_EmpDetails should be empty : True
+09/03/2024 19:45:48 : HR-Dispatcher DOJ : Dt_WishName should be empty : True
+09/03/2024 19:45:48 : HR-Dispatcher : Pass SheetName : DOW
+09/03/2024 19:45:48 : HR-Dispatcher :  Condition Matched :  DOB DOW
+09/03/2024 19:45:48 : HR-Dispatcher :  Read SheetName : DOW
+09/03/2024 19:45:48 : HR-Dispatcher : Emp Details has been read from SheetName DOW
+09/03/2024 19:45:48 : HR-Dispatcher :  FilterEmpdetails Before Count : 49
+09/03/2024 19:45:48 : HR-Dispatcher :  FilterEmpdetails After Count : 49
+09/03/2024 19:45:48 : HR-Dispatcher :  Not found any exception While read Sheet : DOW
+09/03/2024 19:45:49 : HR-Dispatcher :  Before SheetName condition : DOW DOB
+09/03/2024 19:45:49 : HR-Dispatcher DOW :  After SheetName condition : DOW DOW
+09/03/2024 19:45:49 : HR-Dispatcher :  FilterEmpDetails DT Data  : 3162 - DOW
+09/03/2024 19:45:49 : HR-Dispatcher DOW :  EmpID is :  3162
+09/03/2024 19:45:49 : HR-Dispatcher DOW :  EmpName is :  Vipan Kumar
+09/03/2024 19:45:49 : HR-Dispatcher DOW :  EmpDepartment is :  Creative Labs
+09/03/2024 19:45:49 : HR-Dispatcher DOW :  EmpDOW is :  09/04/2023 00:00:00
+09/03/2024 19:45:49 : HR-Dispatcher DOW :  EmpEmailID is :  sakadav@bugraptors.com
+09/03/2024 19:45:49 : HR-Dispatcher DOW:   Business Exception should be emptyTrue
+09/03/2024 19:45:49 : HR-Dispatcher DOW :   DateToVerify 09/04/2023 00:00:00 : SystemDate : 09/03/2024 19:45:49
+09/03/2024 19:45:49 : HR-Dispatcher DOW : SystemDate :  03/Sep
+09/03/2024 19:45:49 : HR-Dispatcher DOJ : Before condition checked : DateToVerify : 04/Sep SystemDate : 04/Sep
+09/03/2024 19:45:49 : HR-Dispatcher DOJ : Dates are matched :  DateToVerify : 04/Sep System date : 04/Sep
+09/03/2024 19:45:49 : HR-Dispatcher DOJ : Read WishNameDetails from sheet :  DOJ__Greetings
+09/03/2024 19:45:49 : HR-Dispatcher DOW:  DOW  : Lookup TargetColumnName : DOW_WishesName
+09/03/2024 19:45:49 : HR-Dispatcher DOW :  Add DataRow into FilterEmpDetails DT , dataRow details  :  3162 Vipan Kumar Creative Labs DOW NA sakadav@bugraptors.com Love is the master key that opens the gates of happiness.
+09/03/2024 19:45:49 : HR-Dispatcher :  Dt_EmpDetails should be empty : True
+09/03/2024 19:45:49 : HR-Dispatcher : Dt_WishName should be empty : True
+09/03/2024 19:45:49 : HR-Dispatcher : FilterEmpDetail added into sheet, SheetName is : EmpDataFilterEmpDetails DT Count is : 3
+09/03/2024 19:45:49 : HR-Dispatcher :  Before Pass FilterEmpDetails DT Count is : 3
+09/03/2024 19:45:49 : HR-Dispatcher :  After Pass out_FilterEmpDetails DT Count is : 3
+09/03/2024 19:45:49 : HR-Dispatcher :  Filter Empdetails has been completed now moving to Add empDetail into Queue 
+09/03/2024 19:45:49 : HR-Dispatcher :  Get Queue/Transaction details from queue with unique reference : 3162 - DOB
+09/03/2024 19:45:50 : HR-Dispatcher :  Get Queue/Transaction details from queue with unique reference : 3162 - DOJ
+09/03/2024 19:45:50 : HR-Dispatcher :  Get Queue/Transaction details from queue with unique reference : 3162 - DOW
+09/03/2024 19:45:50 : HR-Dispatcher :  Process has Ended for Filter Empdetails and Add into Queue 
